@@ -3,18 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Loïc Lefloch blog
+title: Loïc Lefloch
 subtitle: ""
 description: ""
 keywords:
 author: Loïc Lefloch
-language: en
+language: fr
 timezone: "Europe/Paris"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://loiclefloch.fr
-permalink: :year/:month/:day/:title
+# must end with "/", otherwise it downloads the page instead of displaying it.
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
