@@ -197,3 +197,11 @@ cdn:
   enable: true
   jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
+
+marked:
+  breaks: true
+  gfm: true
+  #  Enables custom header id
+  #  Example: ## [foo](#bar), id will be set as "bar".
+  #  Requires headerIds to be enabled.
+  anchorAlias: true

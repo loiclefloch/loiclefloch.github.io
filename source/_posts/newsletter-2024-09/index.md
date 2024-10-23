@@ -27,8 +27,6 @@ https://publication.octo.com/fr/telechargement-refcard-strat%C3%A9gie-de-tests-s
 
 ### Devfest Lille 2024 - Banalisation du DDD ou pas ?
 
-Par BONO.
-
 https://www.youtube.com/watch?v=CoQWIIg5LA0
 
 *Pourquoi la voir ? -* Une introduction aux concepts essentiels du Domain-Driven Design (DDD) avec une approche stratégique et tactique pour aligner le développement logiciel sur les besoins métiers. Il détaille des techniques pratiques comme l'Event Storming, le Deep Modelling, et le Supple Design, tout en expliquant leur impact direct sur la qualité du code et la compréhension collective du métier au sein d'une équipe.
@@ -147,15 +145,15 @@ Un example sur Mac OS:
 ~/dev/octo/.gitconfig
 ```gitconfig
 [user]
-	email = loic.lefloch@octo.com
-	name = loic lefloch
+  email = loic.lefloch@octo.com
+  name = loic lefloch
 ```
 
 ~/dev/octo/company/.gitconfig
 ```gitconfig
 [user]
-	email = loic.lefloch@company.com
-	name = loic lefloch
+  email = loic.lefloch@company.com
+  name = loic lefloch
 ```
 
 Pour vérifier que votre configuration est correcte, dans un dossier ou git est initialisé (ex: ~/dev/octo/project-1)
@@ -165,7 +163,7 @@ Pour vérifier votre user: `git config user.email`
 
 ### git-recent
 
-> `git recent` to see your latest local git branches
+> `git recent` to see your latest local git branches
 
 https://github.com/paulirish/git-recent
 

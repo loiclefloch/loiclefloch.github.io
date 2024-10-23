@@ -27,16 +27,21 @@
     p
       padding-bottom: 16px
 
-    ul
+    ul, ol
       padding-left: 8px
+      padding-bottom: 16px // same as 'p'
+
 
     h4
       margin-top: 24px
 
+    h2
+      font-size: 1.3rem;
+
     h2:before
       position: absolute
-      top: -4px
-      left: -1rem
+      top: 1px
+      left: -1.2rem
       color: $color-accent-1
       content: "#"
       font-weight: bold
@@ -45,10 +50,11 @@
     h3
       padding-left: 2rem
       text-decoration: none;
+      position: relative;
 
     h3:before
       position: absolute
-      //top: -4px
+      top: -4px
       left: 0
       color: $color-accent-1
       content: "##"
@@ -78,23 +84,30 @@
         height: 100%
 
     blockquote
-      margin: 1rem 10px
-      padding: .5em 10px
+      margin: 16px
+      padding: 8px 20px
       background: inherit
-      color: $color-quote
+      color: $color-text
+      border-left: 3px solid $color-quote
       quotes: "\201C" "\201D" "\2018" "\2019"
       font-weight: bold
+
+      ul, ol
+        margin-left: 36px
 
       p
         margin: 0
 
-      &:before
-        margin-right: .25em
-        color: $color-quote
-        content: "\201C"
-        vertical-align: -.4em
-        font-size: 2em
-        line-height: .1em
+      p:last-child
+        padding-bottom: 0;
+
+      //&:before
+      //  margin-right: .25em
+      //  color: $color-quote
+      //  content: "\201C"
+      //  vertical-align: -.4em
+      //  font-size: 2em
+      //  line-height: .1em
 
       footer
         margin: line-height 0
