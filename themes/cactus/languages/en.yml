@@ -1,0 +1,70 @@
+nav:
+  home: Home
+  about: A propos
+  articles: Articles
+  tag: Tag
+  category: Categorie
+  projects: Projets
+  search: Rechercher
+
+icons:
+  menu: Menu
+  top: Top
+
+footer:
+  copyright: Copyright
+
+index:
+  find_me_on: Retrouvez-moi sur
+  enum_comma: ","
+  enum_and: et
+  articles: Articles
+  projects: Projects
+  topics: Topics
+  most_recent: Récent
+
+post:
+  desktop:
+    previous: Article précédent
+    next: Article suivant
+    back_to_top: Back to top
+    share: Partager l'article
+  mobile:
+    menu: Menu
+    toc: TOC
+    back_to_top: Top
+    share: Partager
+
+search:
+  search: Rechercher...
+  no_results: Aucun résultat.
+
+tag_cloud:
+  zero: Pas de tags
+
+pagination:
+  page: Page %d sur %d
+
+counter:
+  tag_cloud:
+    zero: Pas de tags
+    one: ""
+    other: ""
+
+  categories:
+    zero: Aucune categorie
+    one: ""
+    other: ""
+
+  archive_posts:
+    zero: Aucun article.
+    one: ""
+    other: ""
+
+comments:
+  no_js: Please enable JavaScript to view the comments.
+
+tooltip:
+  copy_tip: Copié dans le presse-papier !
+  copied: Copié!
+
