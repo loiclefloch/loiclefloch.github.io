@@ -24,6 +24,7 @@
       display: inline
 
   .content
+
     p
       padding-bottom: 16px
 
@@ -34,6 +35,7 @@
 
     h4
       margin-top: 24px
+      text-decoration: underline
 
     h2
       font-size: 1.3rem;
@@ -90,7 +92,7 @@
       color: $color-text
       border-left: 3px solid $color-quote
       quotes: "\201C" "\201D" "\2018" "\2019"
-      font-weight: bold
+      font-weight: 400
 
       ul, ol
         margin-left: 36px
@@ -170,3 +172,9 @@
 
     &:before
       content: "•"
+
+
+.post
+  .e-content
+    p, li
+      font-family: $font-family-readable-body
