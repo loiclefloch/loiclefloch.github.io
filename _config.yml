@@ -103,3 +103,14 @@ theme: cactus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+# Sitemap
+## Docs: https://github.com/hexojs/hexo-generator-sitemap
+# To exclude post from sitemap, Add "sitemap: false" to the post/page's front matter.
+sitemap:
+  # rel - Add rel-sitemap to the site's header. (Default: false)
+  rel: false
+  # Add site's tags
+  tags: true
+  # Add site's categories
+  categories: true
