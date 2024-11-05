@@ -3,6 +3,7 @@ title: Newsletter • Septembre 2024
 date: 2024-10-01 08:50:00
 permalink: /newsletter/september-2024/
 category: newsletter
+description: "Ce mois-ci : Cup Of Dev, Fully Typed Web Apps, Rate Limiting, Git, vim"
 tags:
 ---
 
@@ -85,7 +86,7 @@ https://blog.gitbutler.com/why-github-actually-won/
 *Pourquoi le lire ? -* Dans la [première newsletter de Juillet](/newsletter/july-2024), on découvrais l'article "A Git story: Not so fun this time". Dans la même lignée, découvrons comment GitHub en est arrivé là selon l'un de ses cofondateurs.
 
 *Voir aussi -* Cet article réagit au contenu suivant
-- [https://www.youtube.com/watch?v=4FNNlMtPS-0](https://www.youtube.com/watch?v=4FNNlMtPS-0)
+- [Why GitHub Won - YouTube](https://www.youtube.com/watch?v=4FNNlMtPS-0)
 - [How GitHub replaced SourceForge as the dominant code hosting platform](https://graphite.dev/blog/github-monopoly-on-code-hosting)
 
 ### Vim for React Developers
@@ -96,7 +97,7 @@ https://blog.gitbutler.com/why-github-actually-won/
 > - Time-saving vim motions to memorize
 > - Recommended patterns and neovim configuration
 
-https://vimforreactdevs.com/
+https://vimforreactdevs.com
 
 *Pourquoi le lire ? -* Permet de découvrir les bindings vim, ou de les ré-apprendre de façon ludique avec des examples autour du développement avec React.
 
@@ -114,7 +115,7 @@ https://www.youtube.com/watch?v=BDU63r4bS9Q
 
 `git log --reverse -S <code>`
 
-*Source -* https://x.com/felixge/status/1833165652107862337?s=12
+*Source -* https://x.com/felixge/status/1833165652107862337
 
 ### Microsoft Teams coller sans formatage
 
@@ -167,7 +168,7 @@ Pour vérifier votre user: `git config user.email`
 
 https://github.com/paulirish/git-recent
 
-*Source -* https://x.com/joshwcomeau/status/1833918245759590710?s=12
+*Source -* https://x.com/joshwcomeau/status/1833918245759590710
 
 ## En vrac
 
@@ -177,7 +178,7 @@ https://github.com/sapegin/vitest-cheat-sheet
 
 ### Announcing TypeScript 5.6
 
-https://devblogs.microsoft.com/typescript/announcing-typescript-5-6/
+https://devblogs.microsoft.com/typescript/announcing-typescript-5-6
 
 ### How Discord Reduced Websocket Traffic by 40%
 

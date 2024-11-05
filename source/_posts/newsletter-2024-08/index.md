@@ -3,6 +3,7 @@ title: Newsletter • Août 2024
 date: 2024-09-01 08:45:00
 permalink: /newsletter/august-2024/
 category: newsletter
+description: "Ce mois-ci : Architecture, Postgres, React, Creativity Inc."
 tags:
 ---
 
@@ -15,8 +16,8 @@ tags:
 https://victorrentea.ro/blog/overengineering-in-onion-hexagonal-architectures/
 
 #### TLDR;
-Over-reliance on complex architectures like Clean, Onion, and Hexagonal can lead to unnecessary overengineering. The article argues for simplifying these architectures by avoiding redundant interfaces unless multiple implementations exist or dependency inversion is needed. It suggests relaxing strict layer hierarchies to reduce boilerplate code, merging simple REST controllers with application services to avoid unnecessary middle layers, and being mindful of over-mocking in tests. Additionally, it advises against separating application and REST DTOs unless multiple channels require it, and recommends integrating domain models directly with persistence layers, provided the team is well-versed in ORM. Finally, it highlights the importance of tailoring architectural decisions to the specific complexity of the project rather than adhering rigidly to theoretical patterns.
 
+Over-reliance on complex architectures like Clean, Onion, and Hexagonal can lead to unnecessary overengineering. The article argues for simplifying these architectures by avoiding redundant interfaces unless multiple implementations exist or dependency inversion is needed. It suggests relaxing strict layer hierarchies to reduce boilerplate code, merging simple REST controllers with application services to avoid unnecessary middle layers, and being mindful of over-mocking in tests. Additionally, it advises against separating application and REST DTOs unless multiple channels require it, and recommends integrating domain models directly with persistence layers, provided the team is well-versed in ORM. Finally, it highlights the importance of tailoring architectural decisions to the specific complexity of the project rather than adhering rigidly to theoretical patterns.
 
 *Pourquoi le lire ? -* Apprendre à éviter les pièges du over-engineering. Il est intéressant de vouloir simplifier les modèles d'architecture. L'article apporte des conseils pratiques, pragmatiques appliqués au monde réel. Les conseils m'ont paru censés, même si je ne suis pas vraiment d'accord avec la partie sur les DTOs.
 
