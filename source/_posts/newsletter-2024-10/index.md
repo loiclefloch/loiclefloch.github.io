@@ -29,10 +29,14 @@ https://deno.com/blog/v2.0
 
 >J'utilise beaucoup Omnivore pour faire ma veille. Ils ont annoncé rejoindre ElevenLabs et fermer leur service dans deux semaines.
 >Le timing et l'annonce sont vraiment pas bons et provoquent des frustrations chez les utilisateurs (dont moi). Un effort est en court pour reprendre la partie OpenSource et la self-host.
+ 
+https://blog.omnivore.app/p/omnivore-is-joining-elevenlabs
 
 "Omnivore is joining forces with ElevenLabs, the leading AI audio research and technology company. Our team is joining ElevenLabs to help drive the future of accessible reading and listening with their new ElevenReader app."
 "The Omnivore codebase will remain 100% open-source for all users"
 
+*Suivi* - Omnivore a publié un follow up : [Details on Omnivore shutting down
+](https://blog.omnivore.app/p/details-on-omnivore-shutting-down).
 
 ## By Octo
 
