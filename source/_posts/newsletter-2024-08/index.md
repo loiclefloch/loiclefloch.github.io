@@ -47,12 +47,9 @@ https://www.rob.directory/blog/react-from-scratch
 
 *Pourquoi le lire ? -* Une de mes lectures préférées, je le relis régulièrement, et cet été n'as pas fait exception. Non seulement on y découvre Pixar mais également comment la créativité y est managée. Un must-read pour moi.
 
-*Tip -* Je l'ai aperçu au 6e étage, attendant ~~désespérement~~ son futur lecteur
-
-
 *Et sinon*
-[Un TLDR](https://medium.com/@aidanhornsby/creativity-inc-632fbfcbaad9)
-[Un TLDR plus en longeur](https://rahulvigneshsekar.medium.com/creativity-inc-book-notes-1-1f90289806ab)
+- [Un TLDR](https://medium.com/@aidanhornsby/creativity-inc-632fbfcbaad9)
+- [Un TLDR plus en longeur](https://rahulvigneshsekar.medium.com/creativity-inc-book-notes-1-1f90289806ab)
 
 ### Système 1 / Système 2 : Les deux vitesses de la pensée (Thinking, Fast and Slow)
 
@@ -64,7 +61,7 @@ https://www.rob.directory/blog/react-from-scratch
 
 *Pourquoi le lire ? -* Il permet de mieux comprendre le fonctionnement de notre pensée et les biais cognitifs qui en découlent.
 
-#### TLDR
+#### TLDR;
 Le système 1 est le système de raisonnement utilisé par défaut, car il est le moins coûteux en énergie. C'est également lui qui est à l'origine de la créativité, grâce aux multiples associations intuitives qu'il effectue. C'est par exemple grâce à lui que les individus sont capables de reconnaître la colère de manière immédiate sur le visage d'une personne.
 
 Le système 2 lui intervient dans la résolution de problèmes complexes, grâce à son approche plutôt analytique. Il est toutefois plus lent que le système 1 et intervient lorsque le système 1 est confronté à un problème nouveau auquel il ne sait pas répondre.
@@ -76,7 +73,7 @@ Le système 2 lui intervient dans la résolution de problèmes complexes, grâce
 
 ```json
 {
-	"window.newWindowDimensions": "maximized"
+  "window.newWindowDimensions": "maximized"
 }
 ```
 
@@ -90,7 +87,11 @@ Il arrive qu'on ai beaucoup de fenêtres vs code ouvertes en même temps. J'ai r
 - Ajouter la configuration:
 
 ```json
-"workbench.colorCustomizations": { "titleBar.activeBackground": "#ec4899" }
+{
+  "workbench.colorCustomizations": { 
+    "titleBar.activeBackground": "#ec4899" 
+  }
+}
 ```
 
 Source: https://x.com/akaasten/status/1826521727368589512

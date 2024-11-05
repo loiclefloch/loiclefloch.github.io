@@ -36,3 +36,7 @@ pagination:
 
 comments:
   no_js: Veuillez activer JavaScript pour voir les réactions.
+
+tooltip:
+  copy_tip: Copier dans le presse-papier
+  copied: Copié !

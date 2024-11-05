@@ -73,7 +73,7 @@ https://brandur.org/rate-limiting
 
 > Shows how to create a Git commit using low-level commands. It explains fundamental Git concepts like blob, tree, and commit objects, showing how they interact to form a commit. The post walks through a step-by-step guide on creating a commit using commands like `hash-object`, `update-index`, `write-tree`, and `commit-tree` to teach Git's object-based architecture.
 
-https://avestura.dev/blog/creating-a-git-commit-the-hard-way?utm_source=tldrwebdev
+https://avestura.dev/blog/creating-a-git-commit-the-hard-way
 
 
 ### Why Github Actually won
