@@ -28,7 +28,7 @@ post:
     share: Partager
 
 search:
-  search: rechercher...
+  search: Rechercher...
   no_results: Aucun résultat trouvé.
 
 pagination:
