@@ -1,5 +1,5 @@
 ---
-title: Newsletter • November 2024
+title: Newsletter • Novembre 2024
 date: 2024-11-26 12:45:00
 category: newsletter
 permalink: /newsletter/november-2024/
