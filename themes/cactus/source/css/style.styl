@@ -118,6 +118,12 @@ body
   min-height: 100%
   overflow-wrap: break-word
 
+  ul
+    margin-left: 16px
+
+  strong
+    font-weight: 600;
+
   p
     hyphens(auto)
 
@@ -367,6 +373,10 @@ code
   color: var(--color-quote);
 }
 
+.markdown-alert.markdown-alert-quote>:last-child {
+  font-style: italic
+}
+
 .markdown-alert.markdown-alert-caution {
   border-left-color: var(--color-caution);
 }
@@ -374,3 +384,8 @@ code
 .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: var(--color-caution);
 }
+
+.image-caption
+  text-align: center;
+  width: 100%;
+  font-style: italic

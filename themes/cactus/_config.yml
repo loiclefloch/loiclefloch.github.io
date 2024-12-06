@@ -131,7 +131,7 @@ page_width: 48
 ##############################################################################
 
 # Enable or disable the RSS feed.
-rss: true
+rss: atom.xml
 
 # Turn your web pages into graph objects (see http://ogp.me).
 open_graph:
@@ -139,6 +139,7 @@ open_graph:
   fb_admins:
   twitter_id:
   google_plus:
+  # TODO: bsky
 
 ##############################################################################
 # Plugins
@@ -199,10 +200,28 @@ cdn:
   jquery: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
 
+post_asset_folder: true
+
 marked:
-  breaks: true
+  # Enable GFM line breaks. This option requires the gfm option to be true
+  breaks: false
   gfm: true
   #  Enables custom header id
   #  Example: ## [foo](#bar), id will be set as "bar".
   #  Requires headerIds to be enabled.
   anchorAlias: true
+  # Insert header id, e.g. <h1 id="value">text</h1>. Useful for inserting anchor link to each paragraph with a heading.
+  headerIds: true
+  smartLists: true
+  smartypants: true
+  quotes: «»
+  # an asset image will be automatically resolved to its corresponding post’s path.
+  # For example, “image.jpg” is located at “/2020/01/02/foo/image.jpg”, meaning it is an asset image of “/2020/01/02/foo/“ post, ![](image.jpg) will be rendered as <img src="/2020/01/02/foo/image.jpg">.
+#  postAsset: true
+#  prependRoot: true
+  external_link:
+    enable: true
+    exclude: []
+    nofollow: true
+
+

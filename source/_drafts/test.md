@@ -1,8 +1,15 @@
 ---
 title: Test theme
 permalink: /test/
-search: false
+hidden: true
 ---
+
+# Photo?
+
+![gartner's 2024 api hype cycle](/images/test/gartners-2024-api-hype-cycle.png)
+![gartner's 2024 api hype cycle](/images/test/gartners-2024-api-hype-cycle.png "Title")
+
+
 
 # Example
 
