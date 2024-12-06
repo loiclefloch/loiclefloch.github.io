@@ -48,6 +48,10 @@ https://expo.dev/changelog/2024/11-12-sdk-52
 
 Résumé vidéo : https://www.youtube.com/watch?v=quZv3uKSEfY
 
+### Vite 6
+
+https://vite.dev/blog/announcing-vite6
+
 ## By Octo
 
 ### Cup of dev - De RH à PO, l'histoire d'Elsa
