@@ -1,18 +1,21 @@
 ---
-title: API Days Paris 2024 Talks
+title: API Days Paris 2024 Talks Insights
 date: 2024-12-06 13:45:00
 category: Talks
 permalink: /api-days/2024/talks/
-description: "Explore insights from a range of API design, architecture, and management talks at a recent conference. Learn about best practices in API design, GraphQL vs REST, AI-driven APIs, and modularization techniques. Discover tips on building scalable, flexible, and user-friendly APIs for both developers and businesses"
+description: "Api Days 2024 API design and architecture talks insights, best practices. Discover tips on building scalable, flexible, and user-friendly APIs"
+image: /images/api-days-2024/api-days-logo.png
 tags:
 ---
 
-I attended the second day of API Days Paris 2024, held at La Défense on December 3–5.
+> I attended the second day of API Days Paris 2024, held at La Défense on December 3–5.
+> You can find below my detailed notes on the talks I participated to with insights, key takeaways, and actionable advice!
 
-You can find below my detailed notes on the talks I attended with insights, key takeaways, and actionable advice!
+![Api Days Logo](/images/api-days-2024/api-days-logo.png)
+
 
 > [!IMPORTANT]
-> Learn more about it on [My Experience at API Days Paris 2024](/api-days/2024/) with Highlights, Key topics, Books.
+> Learn more about it on [My Experience at API Days Paris 2024](/api-days/2024/) with Highlights, Key topics and Books.
 
 
 
@@ -54,7 +57,7 @@ Source: [Magic Quadrant for API Management - Gartner](https://konghq.com/resourc
 Mark emphasized the inseparable link between AI and APIs, stating:
 
 >[!QUOTE]
->"You muse manage APIs your organisation consume, not only those you provide"
+>You muse manage APIs your organisation consume, not only those you provide
 
 AI tools, especially those leveraging large language models, rely heavily on APIs for training data, integration, and delivery. [According to Gartner](https://www.gartner.com/en/newsroom/press-releases/2024-03-20-gartner-predicts-more-than-30-percent-of-the-increase-in-demand-for-apis-will-come-from-ai-and-tools-using-llms-by-2026), over **30% of the increased demand for APIs** by 2026 will stem from AI and related technologies.
 
@@ -107,6 +110,8 @@ This session underscored just how far the API landscape has come since I attende
 
 If you're working with APIs—whether as a developer, architect, or product owner—keeping these trends in mind will help you stay ahead in this rapidly evolving field.
 
+---
+
 ## Build abstractions, not illusions
 Gregor Hohpe, Author of [Platform Strategy](https://architectelevator.com/book/platformstrategy/)
 
@@ -114,7 +119,7 @@ Gregor Hohpe, Author of [Platform Strategy](https://architectelevator.com/book/p
 
 Gregor Hohpe opened with an insightful observation:
 >[!QUOTE]
->We advance technology not towards its limit but to our own"
+>We advance technology not towards its limit but to our own
 
 This sentiment shaped his exploration of platform design, focusing on balancing innovation and structure through meaningful abstractions.
 
@@ -129,7 +134,7 @@ A platform should act as a **foundation**, enabling users to build diverse and i
 >[!QUOTE]
 >If users haven't build something surprising you do not have a platform
 
-Instead of delivering fully formed solutions, platforms should aim to "Make it easier for users to make things themselves".
+Instead of delivering fully formed solutions, platforms should aim to *"Make it easier for users to make things themselves".*
 
 ### Standards and Their Role in Platforms
 
@@ -151,13 +156,13 @@ Gregor emphasized that **abstractions are difficult to create but essential for 
 The goal of abstractions—and APIs—is to offer an intuitive, explicit interface that empowers developers without hiding critical complexities.
 
 ### Anti-Patterns to Avoid
-Gregor cautioned against "wrapping the base," a practice he referred to as the **Grim Wrapper** anti-pattern. Over-abstraction can lead to brittle systems and stifle flexibility.
+Gregor cautioned against "wrapping the base", a practice he referred to as the [**"The Grim Wrapper"**](https://www.linkedin.com/posts/ghohpe_grimwrapper-platformstrategy-activity-7197116570773381120-yChq). anti-pattern. Over-abstraction can lead to brittle systems and stifle flexibility.
 
 ### Recommended Reading and talks
 - [97 Things Every Programmer Should Know](https://github.com/97-things/97-things-every-programmer-should-know)
-- Gregor's LinkedIn article on ["The Grim Wrapper"](https://www.linkedin.com/posts/ghohpe_grimwrapper-platformstrategy-activity-7197116570773381120-yChq).
 - [AWS re:Invent 2023 - Do modern cloud applications lock you in? (ARC307)](https://www.youtube.com/watch?v=jykSBmnAM2I)
 
+---
 
 ## Mastering API Architecture
 *James Gough*
@@ -170,7 +175,7 @@ James Gough’s talk built on key ideas from his book, [_Mastering API Architect
 
 Modern APIs often operate behind an **API Management (APM)** layer and an **API Gateway**. While these layers bring valuable features, they also introduce challenges:
 
-![Modern Apis uses an APM > API Gateway > Apis](/images/api-days-2024/modern-apis-schema.png "Modern Apis schema")
+![Modern Apis uses an APM > API Gateway > Apis](/images/api-days-2024/modern-apis-schema-dark.png "Modern Apis schema")
 
 #### Challenges of APM and Gateways:
 - **Increased Complexity**: Managing multiple API gateways and configurations is a common issue in large organizations.
@@ -218,6 +223,7 @@ James Gough’s talk provided a balanced perspective on the pros and cons of API
 
 For developers, architects, and decision-makers looking to refine their API strategies, this talk—and the accompanying book—are invaluable resources.
 
+---
 
 ## Simplify design and development with an API Design Reference Kit
 *Arnaud Lauret*
@@ -248,8 +254,9 @@ An **API Design Reference Kit** bridges these gaps, offering clarity and structu
       - Input
       - Success Outcome
       - Failure Outcome
-      - API Operation
-        _This creates a bridge between high-level descriptions and API specifications._
+     - API Operation
+_This creates a bridge between high-level descriptions and API specifications._
+
 2. **Interface Contracts**:
    - Use standard formats to define API behavior and structure, such as:
       - **OpenAPI Specifications**
@@ -286,6 +293,7 @@ For **private APIs**, the Design Reference Kit often doubles as the primary docu
 ### Key Takeaway
 An API Design Reference Kit is more than documentation; it’s a strategic tool to align teams, improve efficiency, and create APIs that deliver real value. Whether you’re building private APIs or public-facing ones, investing time in this structure upfront pays dividends throughout the API lifecycle.
 
+---
 
 ## GraphQL Why bother? We have REST
 *Peter Milne*
@@ -317,6 +325,9 @@ GraphQL provides solutions to many of REST’s pain points, offering a more stre
 
 ### Key Takeaway
 While REST remains a robust option, it can be challenging to implement well. GraphQL offers a modern alternative, excelling in scenarios where flexibility, consistency, and UI simplification are priorities. It’s not about replacing REST outright but recognizing when GraphQL might be the better fit for your architecture.
+We also saw on the [API Trends](#API-Trends-on-the-Horizon) that GraphQL plan to adoption is raising.
+
+---
 
 ## Creating APIs that Data Scientists Will Love
 *Rayan Day*
@@ -347,6 +358,7 @@ To truly appeal to data scientists and enhance their workflow, consider implemen
 ### Key Takeaway
 Designing APIs for data scientists requires a focus on ease of use, data integration, and flexibility. By implementing user-friendly SDKs, clear documentation, and features like bulk downloads and date-based queries, you’ll create an API that fits seamlessly into their data pipelines and workflows.
 
+---
 
 ## Five Essential Design Assets for successful APIs
 *Mike Amudsen*
@@ -376,7 +388,7 @@ Just as **ubiquitous language** is crucial in **Domain-Driven Design (DDD)**, a 
 ### 3. Api Diagram
 
 >[!QUOTE]
->"We are visual creatures"
+>We are visual creatures
 
 APIs are about connections, and a well-designed API makes those interconnections visible. Visualizing the structure and flow of your API can help clarify relationships between resources, making it easier for developers to understand how the system works at a glance. Diagrams are essential for communicating complex interactions and ensuring clarity in API design.
 
@@ -394,7 +406,7 @@ To explain the purpose behind each resource, action, and endpoint, you can use s
 The focus should be on the reasoning behind design decisions, offering clarity on how and why things are built the way they are.
 
 ### 5. Api definition
-Good APIs are **explicit**. Whether you’re working with OpenAPI, **AsyncAPI**, **GraphQL**, or **Protobuf**, it’s important to clearly define your API in a machine-readable format. This can include:
+Good APIs are **explicit**. Whether you’re working with **OpenAPI**, **AsyncAPI**, **GraphQL**, or **Protobuf**, it’s important to clearly define your API in a machine-readable format. This can include:
 
 - Code
 - Diagrams
@@ -407,6 +419,8 @@ The goal is to create an API definition that is detailed, precise, and easy to c
 
 ### Key Takeaway
 Mike’s talk emphasized that successful API design goes beyond just writing code. It’s about creating a shared understanding, clearly defining concepts, and communicating effectively through story, vocabulary, visuals, descriptions, and definitions. These assets form the foundation for creating APIs that are not only functional but also maintainable and scalable in the long run.
+
+---
 
 ## How canvas crafts high quality public APIs that drive impact
 *Ofir Zeevi*
@@ -423,7 +437,7 @@ Ofir emphasized the importance of starting with **private APIs** within the orga
 
 - **Leverage domain knowledge**: Take advantage of the expertise available within your team.
 - **Optimize for different needs**: Tailor the API to various internal requirements before exposing it to external users.
-- **Freedom to evolve**: You have more flexibility to iterate and improve the API when it’s used internally first.
+- **Have freedom to evolve**: You have more flexibility to iterate and improve the API when it’s used internally first.
 - **Validate and differentiate**: Test your API’s assumptions and functionality internally to ensure it’s addressing real needs.
 
 ### Validate with MVPs
@@ -453,6 +467,8 @@ The specialty team at Canvas has established a process that includes:
 ### Key Takeaways
 
 Ofir’s approach to crafting high-quality public APIs is built on a foundation of careful planning, internal validation, and a focus on continuous improvement. By starting with private APIs, designing for extensibility, and incorporating specialized expertise throughout the process, organizations can create APIs that not only meet current needs but also drive lasting impact.
+
+---
 
 ## Modularizing your API with Domain Storytelling
 *Henning Schwentner*
@@ -485,6 +501,7 @@ The talk featured a **live demonstration** where Henning invited the audience to
 
 For those interested in seeing how Domain Storytelling works in a live setting, check out Henning's [**NDC conference talk**](https://www.youtube.com/watch?v=g3XwgrLpxDY).
 
+---
 
 ## Breaking APIs: How to Cook Up the perfect Design
 *Marco Pierobon*

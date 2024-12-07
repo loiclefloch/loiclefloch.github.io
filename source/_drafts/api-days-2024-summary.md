@@ -4,10 +4,11 @@ date: 2024-12-06 13:45:00
 category: Talks
 permalink: /api-days/2024/
 description: "Recap of Day 2 at API Days Paris 2024, including insights on API management, design, and architecture from industry leaders. Explore key talks on AI integration, GraphQL vs. REST, modular API design, and practical strategies for building scalable, user-friendly APIs. Discover resources, company highlights, and essential books to enhance your understanding of the API ecosystem."
+image: /images/api-days-2024/api-days-logo.png
 tags:
 ---
 
-> I attended the second day of API Days Paris 2024, held at La Défense on December 3–5. This was my second time participating in this event, and it brought back memories of my first experience a decade ago at the 2014 API Days.
+> I attended the API Days Paris 2024, held at La Défense on December 3–5. This was my second time participating in this event, and it brought back memories of my first experience a decade ago at the 2014 API Days.
 
 ![Api Days Logo](/images/api-days-2024/api-days-logo.png)
 
@@ -15,14 +16,14 @@ tags:
 At the time the event was only at its third edition - if I recall correctly - and much smaller in scale.
 I had joined my very first hackathon there with two fellow students. While we didn’t win, we walked away with our heads held high by grabbing the award for “Best Disguise.” Of course, that might have been because we were the only team in this category.
 
-Fast forward to 2024, and the event has grown exponentially. Spanning three days, with 11 rooms, over 300 speakers, and countless sessions, it is now a cornerstone of the API community.
+Fast forward to 2024 and the event has grown exponentially. Spanning three days, with 11 rooms, over 300 speakers, and countless sessions, it is now a cornerstone of the API community.
 
 > [!NOTE]
 > A big shoutout to [Octo](https://octo.com/) for sponsoring my ticket and made possible for me to dive into this vibrant ecosystem!
 
-I only went to the second day, so here my highlights from Day 2.
+I only went for a day, so here are my highlights from Day 2.
 
-The day kicked off with two insightful keynotes:
+It kicked off with two insightful keynotes:
 - ["The state of Api Management"](/api-days/2024/talks/#The-state-of-Api-Management) by Mark O'Neil
 - ["Build abstractions, not illusions"](/api-days/2024/talks/#Build-abstractions-not-illusions) by Gregor Hohpe
 
@@ -58,7 +59,7 @@ There were many company stands, and I did take a brief tour, though I didn’t h
 
 The conference was well-attended, and the rooms were crowded in the morning, with some participants standing at the back. By the afternoon, however, standing was not allowed due to security concerns, which meant I had to adjust my schedule—either staying in certain rooms for the next talk or leaving early from others to ensure I had a seat.
 
-There were also long lines for books, particularly for signatures, which I decided to skip with some regret.
+There were also long lines for books signatures, which I decided to skip with some regret.
 
 One suggestion would be to collect attendees' talk preferences beforehand. I have been told that the Devoxx conference does this, and it seems to work well for organizing better attendance management.
 
@@ -90,17 +91,17 @@ These themes provided a comprehensive view of the challenges and best practices 
 
 ## Book list
 
-Here a list of books written or advised by the speakers I saw:
+Here a list of books written by the speakers I saw:
 - [Platform Strategy](https://architectelevator.com/book/platformstrategy/), Gregor Hohpe
 - [Mastering API Architecture](https://www.oreilly.com/library/view/mastering-api-architecture/9781492090625/), James Gough
-- [The Design of Web APIs](https://www.oreilly.com/library/view/the-design-of/9781617295102/), Arnaud Lauret - Wait for the second edition to come.
+- [The Design of Web APIs](https://www.oreilly.com/library/view/the-design-of/9781617295102/), Arnaud Lauret - Wait for the upcoming second edition.
 - [Hands-On APIs for AI and Data Science](https://www.oreilly.com/library/view/hands-on-apis-for/9781098164409/), Rayan Day to be released March 2025
 - [Design and Build Great Web APIS](https://learning.oreilly.com/library/view/design-and-build/9781680508123/), Mike Amundsen
 - [RESTful Web API Patterns and Practices Cookbook](https://www.oreilly.com/library/view/restful-web-api/9781098106737/), Mike Amundsen
 
 ## Companies that were there
 
-This is not a complete list, but more the one that I want to take a look at
+This is not a complete list, but rather the ones I want to take a look at.
 
 - https://bump.sh/ - API doc platform for tech writers & engineers.
 - https://platform.sh/ - Deliver your applications faster, at scale
