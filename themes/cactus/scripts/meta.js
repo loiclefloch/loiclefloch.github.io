@@ -18,21 +18,27 @@ function split (str, sep) {
 }
 
 hexo.extend.helper.register('meta', function (post) {
-    var metas = post.meta || [];
-    var metaDOMArray = metas.map(function (meta) {
-        var entities = split(meta, /(?:[^\\;]+|\\.)+/g);
-        var entityArray = entities.map(function (entity) {
-            var keyValue = split(entity, /(?:[^\\=]+|\\.)+/g);
+    const metas = post.meta || [];
+    const metaDOMArray = metas.map(function (meta) {
+        const entities = split(meta, /(?:[^\\;]+|\\.)+/g);
+        const entityArray = entities.map(function (entity) {
+            const keyValue = split(entity, /(?:[^\\=]+|\\.)+/g);
             if (keyValue.length < 2) {
                 return null;
             }
-            var key = trim(keyValue[0]);
-            var value = trim(keyValue[1]);
-            return key + '="' + value + '"';
-        }).filter(function (entity) {
-            return entity;
-        });
+            const key = trim(keyValue[0]);
+            const value = trim(keyValue[1]);
+            return {
+                key,
+                value,
+            };
+        })
+          .filter(Boolean)
+          .map((key, value) => {
+              return key + '="' + value + '"';
+          });
         return '<meta ' + entityArray.join(' ') + ' />';
     });
+
     return metaDOMArray.join('\n');
 });
