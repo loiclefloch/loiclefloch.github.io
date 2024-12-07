@@ -13,7 +13,7 @@ tags:
 ![Api Days Logo](/images/api-days-2024/api-days-logo.png)
 
 
-At the time the event was only at its third edition - if I recall correctly - and much smaller in scale.
+At the time the event was only at its third edition — if I recall correctly — and much smaller in scale.
 I had joined my very first hackathon there with two fellow students. While we didn’t win, we walked away with our heads held high by grabbing the award for “Best Disguise.” Of course, that might have been because we were the only team in this category.
 
 Fast forward to 2024 and the event has grown exponentially. Spanning three days, with 11 rooms, over 300 speakers, and countless sessions, it is now a cornerstone of the API community.
