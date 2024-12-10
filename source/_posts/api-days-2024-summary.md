@@ -3,7 +3,7 @@ title: My Experience at API Days Paris 2024
 date: 2024-12-06 13:45:00
 category: Talks
 permalink: /api-days/2024/
-description: "Recap of Day 2 at API Days Paris 2024, including insights on API management, design, and architecture from industry leaders. Explore key talks on AI integration, GraphQL vs. REST, modular API design, and practical strategies for building scalable, user-friendly APIs. Discover resources, company highlights, and essential books to enhance your understanding of the API ecosystem."
+description: "Recap of Day 2 at API Days Paris 2024: insights on API management, design, and architecture." 
 image: /images/api-days-2024/api-days-logo.png
 tags:
 ---
