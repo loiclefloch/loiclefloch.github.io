@@ -1,5 +1,5 @@
 ---
-title: Newsletter • November 2024
+title: Newsletter • Novembre 2024
 date: 2024-11-26 12:45:00
 category: newsletter
 permalink: /newsletter/november-2024/
@@ -47,6 +47,10 @@ https://www.nativewind.dev/blog/announcement-nativewind-v4-1
 https://expo.dev/changelog/2024/11-12-sdk-52
 
 Résumé vidéo : https://www.youtube.com/watch?v=quZv3uKSEfY
+
+### Vite 6
+
+https://vite.dev/blog/announcing-vite6
 
 ## By Octo
 
