@@ -3,27 +3,39 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "hexo generate --watch",
+    "dev": "hexo generate --draft --watch",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "hexo server",
+    "lint": "npx eslint --config eslint.config.js"
   },
   "hexo": {
     "version": "7.3.0"
   },
   "dependencies": {
     "hexo": "^7.3.0",
+    "hexo-asset-link": "^2.2.3",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^3.0.0",
     "hexo-generator-index": "^4.0.0",
     "hexo-generator-search": "^2.4.3",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
+    "hexo-hide-posts": "^0.4.3",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-marked": "^6.3.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0"
+    "hexo-theme-landscape": "^1.0.0",
+    "marked-alert": "^2.1.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@eslint/markdown": "^6.2.1",
+    "eslint": "^9.16.0",
+    "eslint-plugin-markdown": "^5.1.0",
+    "globals": "^15.13.0"
   }
 }
