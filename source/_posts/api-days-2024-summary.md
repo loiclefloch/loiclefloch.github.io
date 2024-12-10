@@ -1,6 +1,6 @@
 ---
 title: My Experience at API Days Paris 2024
-date: 2024-12-06 13:45:00
+date: 2024-12-06 20:50:00
 category: Talks
 permalink: /api-days/2024/
 description: "Recap of Day 2 at API Days Paris 2024: insights on API management, design, and architecture." 

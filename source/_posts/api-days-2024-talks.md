@@ -1,6 +1,6 @@
 ---
 title: API Days Paris 2024 Talks Insights
-date: 2024-12-06 13:45:00
+date: 2024-12-08 20:45:00
 category: Talks
 permalink: /api-days/2024/talks/
 description: "Api Days 2024 API design and architecture talks insights, best practices. Discover tips on building scalable, flexible, and user-friendly APIs"
