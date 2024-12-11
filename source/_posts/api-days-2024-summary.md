@@ -19,7 +19,7 @@ I had joined my very first hackathon there with two fellow students. While we di
 Fast forward to 2024 and the event has grown exponentially. Spanning three days, with 11 rooms, over 300 speakers, and countless sessions, it is now a cornerstone of the API community.
 
 > [!NOTE]
-> A big shoutout to [Octo](https://octo.com/) for sponsoring my ticket and made possible for me to dive into this vibrant ecosystem!
+> A big shoutout to [Octo](https://octo.com/) for sponsoring my ticket and making it possible for me to dive into this vibrant ecosystem!
 
 I only went for a day, so here are my highlights from Day 2.
 
