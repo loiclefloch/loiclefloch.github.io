@@ -72,6 +72,8 @@ Mark also highlighted some emerging API trends:
 
 ![Gartner's 2024 API Hype Cycle](/images/api-days-2024/Gartners-2024-API-Hype-Cycle.png)
 
+[Learn more](https://www.wikiwand.com/en/articles/Gartner_hype_cycle) about the Gartner Hype Cycle.
+
 - **Service Mesh**: While its adoption has plateaued, its usage remains a critical component in many API architectures. However, it seems to have settled into the background, no longer the focus of cutting-edge innovation.
 - **API Marketplace**: Positioned firmly on the **“Plateau of Productivity”**, API marketplaces have matured into reliable and widely adopted solutions, enabling seamless API discovery and monetization.
 
