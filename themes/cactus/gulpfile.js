@@ -15,13 +15,13 @@ gulp.task('lib:clean',function(){
   return deleteAsync([ './source/lib/*' ]);
 })
 
-gulp.task('lib:fontAwesome',function(){
-  return gulp.src([
-    'node_modules/@fortawesome/fontawesome-free/webfonts/*',
-    'node_modules/@fortawesome/fontawesome-free/css/all.min.css'
-  ], {base: 'node_modules/@fortawesome/fontawesome-free'})
-    .pipe(gulp.dest('./source/lib/font-awesome'))
-})
+// gulp.task('lib:fontAwesome',function(){
+//   return gulp.src([
+//     'node_modules/@fortawesome/fontawesome-free/webfonts/*',
+//     'node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+//   ], {base: 'node_modules/@fortawesome/fontawesome-free'})
+//     .pipe(gulp.dest('./source/lib/font-awesome'))
+// })
 
 gulp.task('lib:download_mesloFont', function () {
   return download('https://github.com/andreberg/Meslo-Font/raw/master/dist/v1.2.1/Meslo%20LG%20v1.2.1.zip?raw=true')
