@@ -9,11 +9,13 @@ footer:
   copyright: Copyright
 
 index:
-  find_me_on: Find me on
-  enum_comma: ','
-  enum_and: and
+  find_me_on: Retrouvez-moi sur
+  enum_comma: ","
+  enum_and: et
   articles: Articles
-  projects: Projets
+  projects: Projects
+  topics: Topics
+  most_recent: Récent
 
 post:
   desktop:
