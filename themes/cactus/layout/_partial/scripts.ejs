@@ -132,3 +132,27 @@
       }());
   </script>
 <% } %>
+
+
+<script text="text/javascript">
+  $(function() {
+    $("body").append(
+      `<div id="image-viewer">
+        <img class="modal-content" id="full-image">
+      </div>`
+    );
+    // Add target="_blank" to all external links
+    $(".post img").click(function(){
+      $("#full-image").attr("src", $(this).attr("src"));
+      $('#image-viewer').css('display', 'flex');
+    });
+
+    $(document).on('keyup', function(e) {
+      $('#image-viewer').hide();
+    });
+
+    $("#image-viewer").click(function(){
+      $('#image-viewer').hide();
+    });
+  });
+</script>
