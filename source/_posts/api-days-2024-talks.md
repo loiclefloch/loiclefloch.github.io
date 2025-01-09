@@ -397,7 +397,7 @@ APIs are about connections, and a well-designed API makes those interconnections
 ### 4. Api description
 
 Good APIs should answer the **why**, not just the **what**.  
-To explain the purpose behind each resource, action, and endpoint, you can use structured formats like [**ALPS** (Application-Level Profile Semantics)]((https://niemand.com.ar/2021/01/08/exploiting-application-level-profile-semantics-apls-from-spring-data-rest/) or tools like [**Smithy**](https://smithy.io/2.0/index.html]) and **[TypeSpec](https://typespec.io/)**. A table format can also help, describing:
+To explain the purpose behind each resource, action, and endpoint, you can use structured formats like [**ALPS** (Application-Level Profile Semantics)](https://niemand.com.ar/2021/01/08/exploiting-application-level-profile-semantics-apls-from-spring-data-rest/) or tools like [**Smithy**](https://smithy.io/2.0/index.html) and **[TypeSpec](https://typespec.io/)**. A table format can also help, describing:
 
 - Resource
 - Action
