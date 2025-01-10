@@ -1,6 +1,6 @@
 ---
 title: Newsletter • January 2025
-date: 2025-01-04 19:37:00
+date: 2025-01-09 19:37:00
 category: newsletter
 permalink: /newsletter/january-2025/
 description: "This month: Api Days Paris, Azimutt, Turing machines, State of JS 2024, Software architecture, DDD and AI with some fun!"
@@ -83,12 +83,25 @@ https://2024.stateofjs.com/
 
 You can also take a look at the [State of React Native survey](https://stateofreactnative.com/).
 
+
+*Why read it? -* It gives a good overview of the state of the Javascript ecosystem. Behind the hype and all the new frameworks, what is really used and what are the trends?
+
+
 ### Metrics, logs, traces, and mayhem: introducing an observability adventure game powered by Grafana Alloy and OTel
 
 https://grafana.com/blog/2024/11/20/metrics-logs-traces-and-mayhem-introducing-an-observability-adventure-game-powered-by-grafana-alloy-and-otel/
 
+*Why read it? -* With the raise of observability tools, it's interesting to see how they can be used in a fun and interactive way. A good introduction of observability.
+
+
 ### The Pragmatic Engineer in 2024
+
 https://docs.google.com/document/d/1b5QRo1USSdbrLSycw1-bPI6t4zC0eRDzBta8m1MGxXM/mobilebasic#heading=h.q3kaj24yt3jz
+
+*Why read it? -* The Pragmatic Engineer is one of my favorite [newsletter](https://newsletter.pragmaticengineer.com/about). 
+This document is a summary of the best articles of the year. It's a good way to (re)discover the newsletter.
+The newsletter is ranked as the [#1 newsletter for software engineers](https://substack.com/top/technology).
+I also highly recommend the podcast [The Pragmatic Engineer](https://www.youtube.com/@pragmaticengineer/) where all interviews are interesting and insightful.
 
 ### GitHub Actions Cache Poisoning to inject a crypto miner into a popular Python package
 
