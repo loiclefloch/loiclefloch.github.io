@@ -23,7 +23,7 @@ Over-reliance on complex architectures like Clean, Onion, and Hexagonal can lead
 
 *Pour approfondir -* [En vidéo - Feature Slicing and Modular Monolith.](https://www.youtube.com/watch?v=H7HWOlANX78)
 
-## Postgres as a search engine
+### Postgres as a search engine
 
 >Build a retrieval system with semantic, full-text, and fuzzy search in Postgres.
 
@@ -31,7 +31,7 @@ https://anyblockers.com/posts/postgres-as-a-search-engine
 
 *Pourquoi le lire ? -* Dans la [newsletter de Juillet]](/newsletter/july-2024), l'article "Just use Postgres for everything" était plutôt high level. On rentre ici un peu plus dans le détail d'une possibilité de Postgres : la recherche
 
-## Implementing react from scratch
+### Implementing react from scratch
 
 > Build a basic version of React from scratch to understand how React internals behaves. Focus is on replicating React's core features, such as the render model, consistent output, essential hooks (like useState and useEffect), and precise DOM updates. The goal is to offer insight into the motivations behind React's interface design by understanding how the internals could be implemented.
 

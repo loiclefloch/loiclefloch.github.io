@@ -1,6 +1,6 @@
 ---
 title: Unlocking the Power of your Database with Azimutt
-date: 2025-06-08 19:20:00
+date: 2025-01-08 19:20:00
 category: Tools
 permalink: /unlocking-the-power-of-your-database-with-azimutt/
 description: Discover Azimutt, the tool for efficient database design, exploration, and documentation. Learn how it can help you better understand and manage your databases.
