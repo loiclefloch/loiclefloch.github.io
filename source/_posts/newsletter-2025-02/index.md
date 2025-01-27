@@ -12,9 +12,11 @@ tags:
 ## News
 
 - [Tailwind v4](https://tailwindcss.com/blog/tailwindcss-v4)
-- [Upcoming CVE for End-of-Life Node.js Versions](https://nodejs.org/en/blog/vulnerability/upcoming-cve-for-eol-versions)
-- [Expo announces eas hosting service](https://expo.dev/blog/expo-announces-eas-hosting-service)
+- [CVE for End-of-Life Node.js Versions](https://nodejs.org/en/blog/vulnerability/upcoming-cve-for-eol-versions) but [dubbed the "Worst CVE of the Year" by Security Experts](https://socket.dev/blog/node-js-eol-versions-cve-dubbed-the-worst-cve-of-the-year)
+- [Expo announces eas hosting service](https://expo.dev/blog/expo-announces-eas-hosting-service), with [an example on how to host Next.js](https://x.com/JI/status/1879740964492980598)
 - [ObservabilityCON 2024: Major news announcements, product updates, and a new startup program](https://grafana.com/blog/2024/09/24/observabilitycon-2024-announcements/)
+- [Shadcn blocks](https://ui.shadcn.com/docs/blocks)
+- [Reanimated 4](https://blog.swmansion.com/reanimated-4-is-new-but-also-very-familiar-b926dd59aa40)
 
 ## By Me
 
@@ -33,6 +35,7 @@ https://blog.octo.com/cr-du-paris-jug-de-janvier-2025
 - [Le futur du développeur avec l'IA ?](https://blog.octo.com/le-futur-du-developpeur-avec-l'ia)
 - [Les challenges pour le mobile en 2025](https://blog.octo.com/les-nouveautes-mobile-2025)
 - [Chrome DevTools from Zero to Hero](https://www.youtube.com/@developersgroupdijon3650)
+- [Diviser par 3 le Lead Time d'une équipe de delivery grâce au Kaizen](https://blog.octo.com/diviser-par-3-le-lead-time-d'une-equipe-de-delivery-grace-au-kaizen)
 
 ## Articles
 
@@ -121,6 +124,9 @@ She advocates for a cultural pushback against the rise of generative AI, urging 
 
 ## Vrac
 
+- [Refactoring with Codemods to Automate API Changes](https://martinfowler.com/articles/codemods-api-refactoring.html#CodemodsInOtherLanguages)
+- [Are LLMs making StackOverflow irrelevant?](https://blog.pragmaticengineer.com/are-llms-making-stackoverflow-irrelevant/)
+- [Don't make these feature flag mistakes](https://newsletter.posthog.com/p/dont-make-these-classic-feature-flag)
 - [Highlights from Git 2.48](https://github.blog/open-source/git/highlights-from-git-2-48/)
 - [Collection of insane and fun facts about SQLite](https://avi.im/blag/2024/sqlite-facts/)
 - [What Years of Testing Have Taught Me](https://newsletter.fractionalarchitect.io/p/44-from-my-diary-what-years-of-testing)
@@ -129,10 +135,19 @@ She advocates for a cultural pushback against the rise of generative AI, urging 
 - [Scaffolding your internationalization in React with automation](https://lingual.dev/blog/automating-your-react-internationalization/)
 - [A 2-ply minimax chess engine in 84,688 regular expressions](https://nicholas.carlini.com/writing/2025/regex-chess.html)
 - [Font with Built-In Syntax Highlighting](https://blog.glyphdrawing.club/font-with-built-in-syntax-highlighting/)
-- [Architect With Confidence: Key Learning Resources of 2024](https://newsletter.fractionalarchitect.io/p/42-architect-with-confidence-key)
 - [Design docs at Google](https://www.industrialempathy.com/posts/design-docs-at-google/)
 - [Five years of React Native at Shopify](https://shopify.engineering/five-years-of-react-native-at-shopify)
 - [Voici la première cyberarme de l’histoire](https://www.youtube.com/watch?v=gXtp6C-3JKo)
+- [Architect With Confidence: Key Learning Resources of 2024](https://newsletter.fractionalarchitect.io/p/42-architect-with-confidence-key)
+- [Books to read in 2025 as Software Architect](https://blog.vvsevolodovich.dev/books-i-want-to-read-in-2024/)
+- [How CERN uses Grafana and Mimir to monitor the world's largest computer grid](https://grafana.com/blog/2025/01/02/how-cern-uses-grafana-and-mimir-to-monitor-the-worlds-largest-computer-grid/)
+- [Metrics, logs, and literature: Inside The National Library of the Netherlands’ observability stack](https://grafana.com/blog/2025/01/06/metrics-logs-and-literature-inside-the-national-library-of-the-netherlands-observability-stack/)
+- [How Bluesky Works](https://newsletter.systemdesign.one/p/how-does-bluesky-work)
+- [Make FormData and input names type-safe in React](https://www.typeonce.dev/article/make-form-data-and-input-names-type-safe-in-react)
+- [Become expert in React Query](https://tigerabrodi.blog/become-expert-in-react-query)
+- [Everything You Need to Know About Node.js Type Stripping](https://satanacchio.hashnode.dev/everything-you-need-to-know-about-nodejs-type-stripping)
+- [Justified Text: Better Than Expected?](https://cloudfour.com/thinks/justified-text-better-than-expected/)
+- [Accessibility essentials every front-end developer should know](https://martijnhols.nl/blog/accessibility-essentials-every-front-end-developer-should-know)
 
 ## Tools
 
@@ -146,12 +161,15 @@ She advocates for a cultural pushback against the rise of generative AI, urging 
 ### Upgrade brew frequently with a cron job
 
 Manually remembering to run brew update is easy to forget.
-But if you skip updates for a long time, running brew update might take significantly longer due to the accumulation of changes. 
+But if you skip updates for a long time, running brew update might take significantly longer due to the accumulation of changes.
+
 A cron job ensures small, frequent updates. It automates the process, ensuring your package database stays updated without manual intervention.
 
 For example, to run it daily at 8 AM:
 
 `0 8 * * * brew update && brew upgrade`
+
+But be careful with this. It upgraded my node version and I had to downgrade it.
 
 ## Fun
 
