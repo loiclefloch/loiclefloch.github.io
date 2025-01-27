@@ -33,3 +33,10 @@ hidden: true
 
 > [!CAUTION]
 > Negative potential consequences of an action.
+
+> [!QUESTION]
+> This is a question?
+ 
+
+>[!CLUE_UNLOCKED]
+>Yes Sherlock
