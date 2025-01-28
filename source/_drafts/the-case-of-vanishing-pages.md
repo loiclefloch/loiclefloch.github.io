@@ -224,10 +224,10 @@ Once it is done we build on the staging server with production settings to verif
 Then we move the build directory from the staging server to the production server".
 
 *And how are you moving it?*
-"We have a script that rsync the build directory into a directory named `next-deployment` on the production server".
+"We have a script that rsync the build directory into a directory named `next-deployment-build` on the production server".
 
 *And then what do you do?*
-"We go on the production server. We do a backup of our current production directory. Then we rsync the content from the `next-deployment` directory into our `production` directory".
+"We go on the production server. We do a backup of our current production directory. Then we rsync the content from the `next-deployment-build` directory into our `production` directory".
 
 Do you see what happens here? *rsync*.
 
@@ -247,7 +247,7 @@ rsync -avz \
 rsync -avz \
 --progress \
 --delete-after \
-/var/www/next-deployment/ /var/www/production
+/var/www/next-deployment-build/ /var/www/production
 ```
 
 So, rsync is copying the files one by one to the production directory.
@@ -274,30 +274,72 @@ While in production, we a lot of users and the cache, the bug was much more pron
    - A user accessed this specific page during the deployment window.
 3. **Caching Amplified the Issue**: Cloudflare’s cache retained the incorrect HTML response, even after the javascript file was available on the server. But it helped us find the root cause of the issue.
 
-## The Solution: Atomic Deployment
-
 So, how do we fix this?
 
-The solution is to replace `rsync` with a **move-based deployment process**. Instead of copying files incrementally, the new deployment strategy works as follows:
+## The Solution: Atomic Deployment
 
-1. Prepare the new build in a separate directory.
-2. Move the entire directory to the production environment once all files are ready.
-3. Ensure the move is atomic, preventing users from accessing partial deployments.
+Atomic deployment is a deployment strategy designed to minimize downtime and risk by ensuring that changes are applied in a single, seamless operation.
+This prevents users from accessing partial deployments and ensures that the site is fully operational with zero downtime.
 
-This guarantees that all required files are available simultaneously, eliminating the deployment window issue.
+### 1. Prepare 
+The process begins in a staging environment, which is an exact replica of the production environment. 
+This ensures that the new build is tested under conditions that closely mimic real-world usage. For example the staging environment should have the same Cloudflare configuration as the production environment.
+Testing in a staging environment reduces the risk of unexpected issues when the new version goes live.
+
+### 2. Isolation: we keep the old and new versions seperated
+
+The new version of the application is completely isolated from the live version during the deployment process. 
+This isolation ensures that the live application remains unaffected by any changes or potential errors in the new version.
+Isolation acts as a safety net, allowing you to test and deploy without disrupting users.
+
+### 3. Switch-over
+
+When you are ready to deploy the new version, you switch over to the new version in a single, quick, atomic operation.
+
+- Rerouting traffic: Directing traffic to a new set of servers hosting the new version.
+- Symbolic links: Switching file system links to point to the new version of the application.
+
+A quick switch-over minimizes downtime.
+
+## Implementing Atomic Deployment in our case
+
+Instead of copying files incrementally, the new deployment strategy works as follows:
+
+1. Add the staging build in `/var/www/next-deployment-build`
+2. Prepare the new deployment directory in `/var/www/deployments/`
+3. Add the build to the new deployment directory
+4. Create a symbolic link to the production folder.
+
 
 ```sh
 #!/bin/bash
 
-rm -rf /var/www/production-backup # remove previous backup.
-mv /var/www/production /var/www/production-backup # backup current production
-mv /var/www/next-deployment /var/www/production
+# Generate a timestamp
+timestamp=$(date +"%Y%m%d%H%M%S")
+# 1. copy build from staging server to next-deployment-build
+# ...
+
+# 2. Prepare the new directory name with the timestamp
+new_dir="/var/www/deployments/$timestamp"
+
+# 3. Add the build to the new directory. 
+mkdir $deployment_dir
+cp -r /var/www/next-deployment-build/* "$deployment_dir/"
+
+# 4. Create symlink from our deployment directory to our production directory. Voilà!
+ln -sfn "$deployment_dir" /var/www/production
 ```
 
-## Key Takeaways
 
-- **Code Splitting and Caching**: Understand how Webpack generates file names and how caching layers like Cloudflare can amplify issues.
-- **SPA Considerations**: Ensure Apache configurations redirect requests appropriately without creating unintended consequences.
-- **Deployment Best Practices**: Avoid file-by-file synchronization in production. Use atomic deployment methods to prevent partial updates.
+# Case solved
 
-By identifying and addressing the interaction between Apache, Cloudflare, and deployment processes we were able to resolve this challenging bug.
+The bug was a combination of factors that made it difficult to reproduce and debug at first. We were fortunate to have Cloudflare cache that made the issue more visible.
+
+
+We had a fun time looking for which part of the system was causing the issue. 
+
+
+I tried as much as possible to explain the process of debugging we went by and the different steps we took to find the root cause of the issue.  This is a good example on how some problems appears only with a certain amount of users and how Atomic deployment can help preventing those issues.
+
+
+I hope you enjoyed this post-mortem. If you have any questions or comments, feel free to reach out to me on [Blue Sky](https://bsky.app/profile/loiclefloch.dev).
