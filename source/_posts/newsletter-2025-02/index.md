@@ -12,6 +12,7 @@ tags:
 ## News
 
 - [Tailwind v4](https://tailwindcss.com/blog/tailwindcss-v4)
+- [Bun v1.2](https://bun.sh/blog/bun-v1.2)
 - [CVE for End-of-Life Node.js Versions](https://nodejs.org/en/blog/vulnerability/upcoming-cve-for-eol-versions) but [dubbed the "Worst CVE of the Year" by Security Experts](https://socket.dev/blog/node-js-eol-versions-cve-dubbed-the-worst-cve-of-the-year)
 - [Expo announces eas hosting service](https://expo.dev/blog/expo-announces-eas-hosting-service), with [an example on how to host Next.js](https://x.com/JI/status/1879740964492980598)
 - [ObservabilityCON 2024: Major news announcements, product updates, and a new startup program](https://grafana.com/blog/2024/09/24/observabilitycon-2024-announcements/)
