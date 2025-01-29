@@ -278,7 +278,7 @@ So, how do we fix this?
 
 ## The Solution: Atomic Deployment
 
-Atomic deployment is a deployment strategy designed to minimize downtime and risk by ensuring that changes are applied in a single, seamless operation.
+**Atomic deployment** is a deployment strategy designed to minimize downtime and risk by ensuring that changes are applied in a single, seamless operation.
 This prevents users from accessing partial deployments and ensures that the site is fully operational with zero downtime.
 
 ### 1. Prepare 
@@ -301,7 +301,7 @@ When you are ready to deploy the new version, you switch over to the new version
 
 A quick switch-over minimizes downtime.
 
-## Implementing Atomic Deployment in our case
+## Implementing Atomic Deployment
 
 Instead of copying files incrementally, the new deployment strategy works as follows:
 
@@ -331,7 +331,7 @@ ln -sfn "$deployment_dir" /var/www/production
 ```
 
 
-# Case solved
+## Case solved
 
 The bug was a combination of factors that made it difficult to reproduce and debug at first. We were fortunate to have Cloudflare cache that made the issue more visible.
 
