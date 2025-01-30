@@ -3,10 +3,11 @@ title: Newsletter • February 2025
 date: 2025-01-30 09:23:00
 category: newsletter
 permalink: /newsletter/february-2025/
-description: "This month: Git, mobile, accessibility"
+description: "This month: Automated Accessibility Testing, Git Tips & Tricks 2025, Cross-Platform Mobile Development, Observability Trends 2025, AI’s Impact on Search & Content"
 lang: en
 tags: 
 ---
+
 
 
 ## News
