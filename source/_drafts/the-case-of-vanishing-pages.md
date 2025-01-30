@@ -47,7 +47,7 @@ This explains why the website is running ok but that, on this specific page, we 
 
 Create React App is using [Webpack](https://webpack.js.org/) under the hood to build the React application.
 
-*Small side note: Create React app was for a long time the way to go to create a new react app. It is now [deprecated](https://dev.to/eslachance/stop-using-create-react-app-7in) in favour of [vite](https://vite.dev/guide/).*
+*Small side note: Create React app was for a long time the way to go to create a new react app. It is now [deprecated](https://github.com/facebook/create-react-app) in favour of [React frameworks](https://react.dev/learn/start-a-new-react-project).*
 
 ```javascript
 import loadable from '@loadable/component'
