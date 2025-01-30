@@ -1,6 +1,6 @@
 ---
 title: Newsletter • February 2025
-date: 2025-01-24 16:37:00
+date: 2025-01-30 09:23:00
 category: newsletter
 permalink: /newsletter/february-2025/
 description: "This month: Git, mobile, accessibility"
