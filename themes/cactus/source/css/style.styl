@@ -225,10 +225,17 @@ pre
     border: none
 
 code
-  padding: 0 5px
-  border: 1px dotted $color-border
-  border-radius: 2px
-  -webkit-border-radius: 2px
+  font-style: italic
+  background-color: #1e1e1e; /* Dark gray, almost black */
+  color: #76c7f0; /* Soft cyan for text */
+  //color: #93beae;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  font-size: 0.80em; /* Slightly smaller than surrounding text */
+  padding: 2px 4px; /* Add some spacing around the text */
+  border-radius: 4px; /* Rounded corners for a modern look */
+  border: 1px solid #333; /* Subtle border for separation */
+  white-space: nowrap; /* Prevent text from wrapping */
+
 
 .highlight
   overflow-x: auto
@@ -383,6 +390,22 @@ code
 
 .markdown-alert.markdown-alert-caution .markdown-alert-title {
   color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-clue_unlocked {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-clue_unlocked .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-question {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-question .markdown-alert-title {
+  color: var(--color-important);
 }
 
 //

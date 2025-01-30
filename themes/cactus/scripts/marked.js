@@ -11,6 +11,16 @@ const options = {
       icon: '<i class="fa-solid fa-quote-right"></i>',
       title: 'Quote', // optional
     },
+    {
+      type: 'clue_unlocked',
+      icon: '<i class="fa-solid fa-puzzle-piece"></i>',
+      title: 'New clue unlocked', // optional
+    },
+    {
+      type: 'question',
+      icon: '<i class="fa-solid fa-question"></i>',
+      title: 'Question', // optional
+    },
   ]
 };
 

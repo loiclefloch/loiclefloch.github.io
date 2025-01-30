@@ -154,7 +154,7 @@ She advocates for a cultural pushback against the rise of generative AI, urging 
 
 - [Bruno](https://github.com/usebruno/bruno) - Opensource IDE for exploring and testing APIs. Replace Postman.
 - [chezmoi.io](https://www.chezmoi.io/) - Manage your dotfiles across multiple diverse machines, securely
-- [AFFINE](https://github.com/toeverything/AFFiNE) -next-gen knowledge base that brings planning, sorting and creating all together. Replace Notion and Miro
+- [AFFINE](https://github.com/toeverything/AFFiNE) - next-gen knowledge base that brings planning, sorting and creating all together. Replace Notion and Miro
 - [HeadingsMap chrome extension](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi) - To show, browse and audit the headings structure for accessibility and SEO.
 
 ## TIL

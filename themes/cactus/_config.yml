@@ -28,7 +28,7 @@ nav:
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
   - icon: bluesky
-    link: https://bsky.app/profile/loiclefloch.fr
+    link: https://bsky.app/profile/loiclefloch.dev
   - icon: linkedin
     link: https://www.linkedin.com/in/loiclefloch
   - icon: github
@@ -141,7 +141,7 @@ open_graph:
   fb_admins:
   twitter_id:
   google_plus:
-  # TODO: bsky - https://bsky.app/profile/loiclefloch.fr
+  # TODO: bsky - https://bsky.app/profile/loiclefloch.dev
 
 
 ##############################################################################
