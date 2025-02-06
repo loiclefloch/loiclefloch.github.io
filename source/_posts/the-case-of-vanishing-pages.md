@@ -121,7 +121,11 @@ If we are served with the `index.html` file content, this means that Apache didn
 >[!CLUE_UNLOCKED]
 >The file does not exist on the server when requested
 
-/ TODO: ls console example
+```bash
+> ls static/js/
+
+main.js DashboardPage.c999599b.chunk.js PlayerRecordPage.296bf010.chunk.js
+```
 
 We can see that the file exists.
 
