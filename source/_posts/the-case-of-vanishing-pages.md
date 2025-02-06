@@ -1,6 +1,6 @@
 ---
 title: "The Case of the Vanishing Pages: Debugging an Elusive React Bug"
-date: 2025-01-26 20:13:00
+date: 2025-02-05 20:13:00
 permalink: /the-case-of-vanishing-pages/
 category: Post mortem
 description: ""
@@ -86,13 +86,15 @@ Indeed, we saw that a generic component code had changed.
 
 We know more about how the build is made and the routes are displayed.
 Let's go back to our console error and take a further look.  Why the browser was not able to decode the javascript file ?
-On the Network Dev Tool, we can see that the javascript file is considered as being an HTML file. This is weird.
+On the Network Dev Tool, we can see that the javascript file is considered as being a document file. This is weird. It should be considered as a script.
 
-TODO: screenshot
+![Network content](/images/the-case-of-vanishing-pages/network-content.png)
 
 Looking at the content of the file loaded by the browser we see that the problematic javascript file content is HTML and not javascript code.
 
-TODO: screenshot
+![Console preview "You need to enable JavaScript to run this app"](/images/the-case-of-vanishing-pages/console-preview.png)
+
+![Console source - content is HTML](/images/the-case-of-vanishing-pages/console-source.png)
 
 This is not any random HTML, but the html of our `index.html` file of our App.
 This means that the server is providing the content of the `index.html` file when we request this specific javascript file.
@@ -150,9 +152,14 @@ Cloudflare is caching the response. If the Apache server mistakenly served `inde
 
 If we request the file from the server itself without going through Cloudflare ?
 
-TODO: Screenshot curl local
+```bash
+> curl http://localhost:4000/static/js/PlayerRecordPage.296bf010.chunk.js
+(this["webpackJsonp-website"] = this["webpackJsonp-website"] || []).push([[29], {
+    1003: function(e, a, t) {
+...
+```
 
-Bingo!
+Bingo! We have javascript code, not HTML.
 
 So here Cloudflare has the index.html file in cache, while the file exists on the server.
 
