@@ -1,9 +1,9 @@
 ---
 title: Newsletter • March 2025
-date: 2025-02-25 23:03:00
+date: 2025-03-01 13:03:00
 category: newsletter
 permalink: /newsletter/march-2025/
-description: "TODO"
+description: "This month, dive into a thrilling debugging adventure, explore the latest State of React & React Native, and discover insights on scaling software to handle billions of requests. We also cover developer productivity, software architecture, and a deep dive into how images and databases work"
 lang: en
 tags: 
 ---
@@ -26,7 +26,7 @@ Discover [7 things a developer should know about databases](https://blog.octo.co
 
 Vitest is the default go to for a lot of node projects these days. Make sure that it is up to date, there is [critical flaw vulnerability reported](https://github.com/vitest-dev/vitest/security/advisories/GHSA-9crc-q9x8-hgqq).
 
-Obsidian is my number 1 tool, that I use as a second brain. It is [now free for work](https://obsidian.md/blog/free-for-work/) and the latest update, the [1.8.8 is out](https://obsidian.md/changelog/2025-02-25-desktop-v1.8.8/) .
+Obsidian is my number one tool, that I use as a second brain. It is [now free for work](https://obsidian.md/blog/free-for-work/) and the latest update, the [1.8.8 is out](https://obsidian.md/changelog/2025-02-25-desktop-v1.8.8/) .
 
 ## Articles
 
@@ -54,7 +54,7 @@ This in-depth analysis offers valuable lessons on optimizing database operations
 
 Let's start with APIs and a gentle reminder on [How to (and how not to) design REST APIs](https://github.com/stickfigure/blog/wiki/How-to-%28and-how-not-to%29-design-REST-APIs) .
 
-I found this little Linkedin post insightful on - [how to handle transactions in a clean architecture](https://www.linkedin.com/posts/antoinechalifour_comment-g%C3%A9rer-les-transactions-en-clean-archi-ugcPost-7295698509045874688-EXB3) with a real example.
+I found this little Linkedin post insightful on [how to handle transactions in a clean architecture](https://www.linkedin.com/posts/antoinechalifour_comment-g%C3%A9rer-les-transactions-en-clean-archi-ugcPost-7295698509045874688-EXB3) with a real example.
 
 Then we have three blog posts about billions:
 
@@ -67,18 +67,18 @@ Learn how letsencrypt is [Scaling Rate Limits to Prepare for a Billion Active Ce
 
 And if you want to learn more about software architecture, do not miss the [good resources to Learn Software Architecture in 2025](https://blog.bytebytego.com/p/ep151-24-good-resources-to-learn).
 
-## React and react native
+## React and React Native
 
 Those two have their own category this month, with a lot of news and nice articles.
 
 In January we had the [State of Javascript 2024 survey results](/newsletter/january-2025/#State-of-JS-2024-results). It is now the time for the [State of React 2024 results](https://2024.stateofreact.com/) and the [State of React Native 2024 results](https://results.stateofreactnative.com/en-US/).
 
-Since React is [Sunsetting Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app), the go to for a new React project is to use a framework. React-native already highly recommend to [use a framework to build React Native apps](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps).
+Since React is [sunsetting Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app), the go to for a new React project is to use a framework. React Native already highly recommend to [use a framework to build React Native apps](https://reactnative.dev/blog/2024/06/25/use-a-framework-to-build-react-native-apps).
 You can learn more on the [how to start a React Project 2025](https://www.robinwieruch.de/react-starter) article, which exposes different possibilities, and more focus article on [next.js: an honest review](https://beeps.dev/blog/nextjs-an-honest-review).
 
 You can also use [cross-platform mobile development with Expo](https://newsletter.pragmaticengineer.com/p/expo) which is more and more used for the web as well, especially with the [new expo workflows](https://expo.dev/eas/workflows), a React Native CI/CD for Android, iOS, and Web.
 
-On React Native side you can take a look at the [Expo's Your 2025 React Native Tech Stack stream video](https://www.youtube.com/watch?v=kqdrn-jEaXY)
+On React Native side you can take a look at the [Expo's Your 2025 React Native Tech Stack stream video](https://www.youtube.com/watch?v=kqdrn-jEaXY).
 
 Expo also made another stream on [what is Legend List? A demo of the drop-in replacement for FlatList](https://www.youtube.com/watch?v=XpZMveUCke8).
 
@@ -112,4 +112,8 @@ Let's deep a little bit with [how React Router works under the hood](https://tig
 
 `git config --global branch.sort -committerdate`
 
-source: https://bsky.app/profile/bholmes.dev/post/3linbxksutc2q
+[source](https://bsky.app/profile/bholmes.dev/post/3linbxksutc2q)
+
+## Fun
+
+- [Pokemon terminal](https://github.com/LazoCoder/Pokemon-Terminal)
