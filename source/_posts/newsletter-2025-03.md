@@ -84,7 +84,7 @@ Expo also made another stream on [what is Legend List? A demo of the drop-in rep
 
 Note that an unexpected new version of [React Native 0.78](https://reactnative.dev/blog/2025/02/19/react-native-0.78) that supports React 19 has been released. React Native team wants to make [smaller and faster releases](https://reactnative.dev/blog/2025/02/19/react-native-0.78#towards-smaller-and-faster-releases).
 
-Let's deep a little bit with [how React Router works under the hood](https://tigerabrodi.blog/how-react-router-works-under-the-hood) , [Master Redux Action Best Practices & Make Debugging Easy](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy) and how to create a  [React "as" Prop Using TypeScript](https://newsletter.eng-leadership.com/p/15-lessons-from-15-years-in-tech).
+Let's deep a little bit with [how React Router works under the hood](https://tigerabrodi.blog/how-react-router-works-under-the-hood) , [Master Redux Action Best Practices & Make Debugging Easy](https://janhesters.com/blog/master-redux-action-best-practices-and-make-debugging-easy) and how to create a  [React "as" Prop Using TypeScript](https://playfulprogramming.com/posts/react-as-prop).
 
 ## En vrac
 
