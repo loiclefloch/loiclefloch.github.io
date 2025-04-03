@@ -14,7 +14,7 @@ My post [The Case of the Vanishing Pages: Debugging an Elusive React Bug](https:
 
 This month was a conferences month for me:
 - [Duck Conf 2025](https://www.laduckconf.com/), a conference organised by Octo. I made blog post about the talk [SEO: milliseconds versus millions](https://blog.octo.com/la-duck-conf-2025-cr-seo--des-millisecondes-contre-des-millions). You can find other reports of the conference on the [Octo blog](https://blog.octo.com/category/software-engineering).
-- [Paris Typescript Conference](https://la-conf.typescript.paris/). You can find my blog post about it on the [Octo blog](https://blog.octo.com/compte-rendu-paris-typescript-la-conf-matinee-1). 
+- [Paris Typescript Conference](https://la-conf.typescript.paris/). You can find my blog post about it on the [Octo blog](https://blog.octo.com/paris-typescript-conference-report-morning). 
 - [React Paris](https://react.paris/). You can find the replay on [YouTube](https://www.youtube.com/@BeJScommunity/playlists).
 - The [Epic Web Conf 2025](https://www.epicweb.dev/conf/2025). You can find the [replay on YouTube](https://www.youtube.com/live/SDuvi5eUqp0). Kent C. Dodds also released the [Epic web dev principles](https://www.epicweb.dev/principles) and [Epic Programming style guide](https://github.com/epicweb-dev/config/blob/main/docs/style-guide.md).
 
