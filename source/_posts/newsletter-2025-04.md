@@ -23,7 +23,7 @@ This month was a conferences month for me:
 Some companies are seing a raise of fake candidates using AI. Look at this [AI fakers exposed in tech dev recruitment: postmortem](https://newsletter.pragmaticengineer.com/p/ai-fakers) and this [Deep fake prevention paper - 17 Practical Strategies to Detect Fake IT Workers](https://www.vidocsecurity.com/ebook/ebook-detecting-fake-candidates-vsl.pdf).
 Speaking of AI we have [how to use AI to increase Software Development productivity](https://newsletter.eng-leadership.com/p/how-to-use-ai-to-increase-software) blog post and a set of [cursor rules](https://dotcursorrules.com/).
 
-AI has limitations. Discover the challenges of achieving general AI capable of reasoning and planning at a human level with [why Anthropic’s Claude still hasn’t beaten Pokémon](https://arstechnica.com/ai/2025/03/why-anthropics-claude-still-hasnt-beaten-pokemon/). Clause has weak visual processing, memory limitations, lack of meta-strategies, inconsistent planning and adaptation...
+AI has limitations. Discover the challenges of achieving general AI capable of reasoning and planning at a human level with [why Anthropic’s Claude still hasn’t beaten Pokémon](https://arstechnica.com/ai/2025/03/why-anthropics-claude-still-hasnt-beaten-pokemon/). Claude has weak visual processing, memory limitations, lack of meta-strategies, inconsistent planning and adaptation...
 
 
 In [Async, Sync, in Between](https://antfu.me/posts/async-sync-in-between), we learn that Javascript librairies must handle sync and async. This article exposes this problem and how they are doing it, mostly by having different APIs for sync and async behaviours.
