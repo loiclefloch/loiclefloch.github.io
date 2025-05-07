@@ -1,175 +1,209 @@
-  header
-    article
-    .posttitle
-      margin-top: 0
-      margin-bottom: 0
-      text-transform: none
-      font-size: 1.5em
-      line-height: 1.25
+header
+  article
+  
+  .posttitle
+    text-align: center
+    margin-top: 0
+    margin-bottom: 0
+    text-transform: none
+    font-size: 1.5em
+    line-height: 1.65
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
 
-    .meta
-      margin-top: 0
-      margin-bottom: 1rem
+  .meta
+    text-align: center
+    margin-top: 16px
+    margin-bottom: 1rem
 
-    .meta *
-      color: $color-accent-3
-      font-size: .85rem
+  .meta *
+    color: $color-accent-3
+    font-size: .85rem
 
-    .author
-      text-transform: uppercase
-      letter-spacing: .01em
-      font-weight: 700
+  .author
+    letter-spacing: .01em
+    font-weight: 700
 
-    .postdate
-      display: inline
+  .postdate
+    display: inline
 
+
+@media (min-width: 760px)
   .content
+    h2,
+    h3,
+    h4,
+    h5,
+    ul,
+    ol,
+    p,
+    .markdown-alert
+      width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
 
-    p
-      padding-bottom: 16px
-
-    ul, ol
-      padding-left: 8px
-      padding-bottom: 16px // same as 'p'
-
-
-    h4
-      margin-top: 24px
-      text-decoration: underline
+    .highlight
+      margin-left: auto!important;
+      margin-right: auto!important;
+      width: 100%;
+      max-width: 62ch; 
 
     h2
-      font-size: 1.3rem;
+      padding-left: 1.2rem
 
-    @media (max-width: 480px)
-      h2
-        padding-left: 1.2rem
-
-      h2:before
-        position: absolute
-        top: 1px
-        left: 0
-        color: $color-accent-1
-        content: "#"
-        font-weight: bold
-        font-size: 1.2rem
-
-    @media (min-width: 480px)
-      h2
-        padding-left: 1.2rem
-
-      h2:before
-        position: absolute
-        top: 1px
-        left: 0
-        color: $color-accent-1
-        content: "#"
-        font-weight: bold
-        font-size: 1.2rem
+    h2
+      margin-left: 6ch!important
 
     h3
-      padding-left: 2rem
-      text-decoration: none;
-      position: relative;
+      margin-left: 6ch!important
 
-    h3:before
+
+.content
+
+  p
+    padding-bottom: 16px
+
+  ul, ol
+    padding-bottom: 16px // same as 'p'
+
+  h2
+    font-size: 1.3rem;
+
+  h4
+    margin-top: 24px
+    text-decoration: underline
+
+  @media (max-width: 480px)
+    h2:before
       position: absolute
-      top: -4px
+      top: 1px
       left: 0
       color: $color-accent-1
-      content: "##"
+      content: "#"
       font-weight: bold
       font-size: 1.2rem
 
-    img
-    video
-      display: block
-      margin: auto
-      max-width: 100%
-      height: auto
+  @media (min-width: 480px)
+    h2
+      padding-left: 1.2rem
 
-    /* http://webdesignerwall.com/tutorials/css-elastic-videos */
-    .video-container
-      position: relative
-      overflow: hidden
-      padding-top: (9 / 16 * 100)% // 16:9 ratio
-      height: 0
+    h2:before
+      position: absolute
+      top: 1px
+      left: 0
+      color: $color-accent-1
+      content: "#"
+      font-weight: bold
+      font-size: 1.2rem
 
-      iframe, object, embed
-        position: absolute
-        top: 0
-        left: 0
-        margin-top: 0
-        width: 100%
-        height: 100%
+  h3
+    padding-left: 2rem
+    text-decoration: none;
+    position: relative;
 
-    .markdown-alert
-      margin: 16px
-      padding: 8px 20px
+  h3:before
+    position: absolute
+    top: -4px
+    left: 0
+    color: $color-accent-1
+    content: "##"
+    font-weight: bold
+    font-size: 1.2rem
 
-    blockquote
-      margin: 16px
-      padding: 8px 20px
-      background: inherit
-      color: $color-text
-      border-left: 3px solid $color-quote
-      quotes: "\201C" "\201D" "\2018" "\2019"
-      font-weight: 400
+  img
+  video
+    display: block
+    margin: auto
+    max-width: 100%
+    height: auto
 
-      ul, ol
-        margin-left: 36px
+  /* http://webdesignerwall.com/tutorials/css-elastic-videos */
+  .video-container
+    position: relative
+    overflow: hidden
+    padding-top: (9 / 16 * 100)% // 16:9 ratio
+    height: 0
 
-      p
-        margin: 0
+    iframe, object, embed
+      position: absolute
+      top: 0
+      left: 0
+      margin-top: 0
+      width: 100%
+      height: 100%
 
-      p:last-child
-        padding-bottom: 0;
+  .markdown-alert
+    //margin: 16px
+    padding: 8px 20px
 
-      //&:before
-      //  margin-right: .25em
-      //  color: $color-quote
-      //  content: "\201C"
-      //  vertical-align: -.4em
-      //  font-size: 2em
-      //  line-height: .1em
+  .highlight
 
-      footer
-        margin: line-height 0
-        color: $color-meta
-        font-size: 12px
+  blockquote
+    margin: 16px
+    padding: 8px 20px
+    background: inherit
+    color: $color-text
+    border-left: 3px solid $color-quote
+    quotes: "\201C" "\201D" "\2018" "\2019"
+    font-weight: 400
 
-        a
-          background-image: linear-gradient(transparent, transparent 5px, $color-meta 5px, $color-meta)
-          color: $color-meta
+    ul, ol
+      margin-left: 36px
 
-        a:hover
-          background-image: linear-gradient(transparent, transparent 4px, lighten($color-meta, 20%) 4px, lighten($color-meta, 20%))
-          color: lighten($color-meta, 20%)
-
-        cite
-          &:before
-            padding: 0 .5em
-            content: "—"
-
-    .pullquote
+    p
       margin: 0
-      width: 45%
-      text-align: left
 
-      &.left
-        margin-right: 1em
-        margin-left: .5em
+    p:last-child
+      padding-bottom: 0;
 
-      &.right
-        margin-right: .5em
-        margin-left: 1em
+    //&:before
+    //  margin-right: .25em
+    //  color: $color-quote
+    //  content: "\201C"
+    //  vertical-align: -.4em
+    //  font-size: 2em
+    //  line-height: .1em
 
-    .caption
-      position: relative
-      display: block
-      margin-top: .5em
+    footer
+      margin: line-height 0
       color: $color-meta
-      text-align: center
-      font-size: .9em
+      font-size: 12px
+
+      a
+        background-image: linear-gradient(transparent, transparent 5px, $color-meta 5px, $color-meta)
+        color: $color-meta
+
+      a:hover
+        background-image: linear-gradient(transparent, transparent 4px, lighten($color-meta, 20%) 4px, lighten($color-meta, 20%))
+        color: lighten($color-meta, 20%)
+
+      cite
+        &:before
+          padding: 0 .5em
+          content: "—"
+
+  .pullquote
+    margin: 0
+    width: 45%
+    text-align: left
+
+    &.left
+      margin-right: 1em
+      margin-left: .5em
+
+    &.right
+      margin-right: .5em
+      margin-left: 1em
+
+  .caption
+    position: relative
+    display: block
+    margin-top: .5em
+    color: $color-meta
+    text-align: center
+    font-size: .9em
+
 
 .posttitle
   text-transform: none
@@ -197,12 +231,15 @@
 
 .post
   .e-content
+    padding-top: 36px;
     padding-bottom: 64px;
 
     p, li
       font-family: $font-family-readable-body
 
     @media (max-width: 480px)
+      padding-top: 24px
+      
       h2
         padding-left: 1.2rem
 

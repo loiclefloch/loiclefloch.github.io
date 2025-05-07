@@ -171,7 +171,7 @@ We have a cache problem.
 
 What happens if we clear this Cloudflare cache? The page works again! The javascript file contains javascript not HTML.
 
-#### Confirming the Issue
+### Confirming the Issue
 - When bypassing Cloudflare and requesting the javascript file directly from the server, it returned the correct content.
 - Clearing Cloudflare's cache resolved the issue.
 
