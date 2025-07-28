@@ -84,10 +84,10 @@ tags:
 
 ## By Octo
 - [Partagez simplement vos Java CLI Apps](https://www.youtube.com/watch?v=R9ONCJ6mQkA)
-- [Duck Conf 2025 - Le micro-frontend décomplexé : les dessous d’une migration incrémentale et itérative](https://blog.octo.com/category/software-engineering)
-- [Le HTML sémantique : coder pour les humains avant tout](https://blog.octo.com/category/software-engineering)
-- [Mise en place d'un mécanisme de déploiement continue](https://blog.octo.com/category/software-engineering)
-- [Langage ubiquitaire au-delà d’un Bounded Context ?](https://blog.octo.com/category/software-engineering)
+- [Duck Conf 2025 - Le micro-frontend décomplexé : les dessous d’une migration incrémentale et itérative](https://blog.octo.com/octo-article-de-blog-10)
+- [Le HTML sémantique : coder pour les humains avant tout](https://blog.octo.com/le-html-semantique--coder-pour-les-humains-avant-tout)
+- [Mise en place d'un mécanisme de déploiement continu](https://blog.octo.com/mise-en-place-d'un-mecanisme-de-deploiement-continue)
+- [Langage ubiquitaire au-delà d’un Bounded Context ?](https://blog.octo.com/octo-langage-ubiquitaire-au-dela-d'un-bounded-context)
 
 ## AI
 
