@@ -3,7 +3,7 @@ title: Newsletter • August 2025
 date: 2025-08-03 14:00:00
 category: newsletter
 permalink: /newsletter/august-2025/
-description: ""
+description: "Scanning GitHub for leaked secrets, career advice, Japanese coding styles, advanced API versioning, micro-frontends, and the latest in AI and coding trends!"
 lang: en
 tags: 
 ---
