@@ -28,9 +28,21 @@ header
   .postdate
     display: inline
 
-
 @media (min-width: 760px)
   .content
+    h2,
+    h3,
+    h4,
+    h5,
+    ul,
+    ol,
+    p
+      width: 60ch;
+      margin-left: auto;
+      margin-right: auto;
+
+@media (min-width: 760px)
+  .post
     h2,
     h3,
     h4,
@@ -43,6 +55,7 @@ header
       margin-left: auto;
       margin-right: auto;
 
+  .e-content
     .highlight
       margin-left: auto!important;
       margin-right: auto!important;
@@ -51,15 +64,13 @@ header
 
     h2
       padding-left: 1.2rem
-
-    h2
       margin-left: 6ch!important
 
     h3
       margin-left: 6ch!important
 
 
-.content
+.post
 
   p
     padding-bottom: 16px
