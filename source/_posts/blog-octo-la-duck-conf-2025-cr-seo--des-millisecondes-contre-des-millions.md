@@ -8,7 +8,7 @@ lang: fr
 tags: 
 ---
 
->[!QUOTE]
+>[!SUMMARY]
 >Découvrez comment l'UX impacte le SEO et comment optimiser votre site pour améliorer son référencement naturel. Explications sur les Core Web Vitals (CLS, INP) et bonnes pratiques pour une meilleure expérience utilisateur.
 
 A retrouver sur le blog d'Octo : [La Duck Conf 2025 - CR - SEO : Des millisecondes contre des millions](https://blog.octo.com/la-duck-conf-2025-cr-seo--des-millisecondes-contre-des-millions).

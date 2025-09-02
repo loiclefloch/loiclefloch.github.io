@@ -8,7 +8,7 @@ lang: fr
 tags: 
 ---
 
->[!QUOTE]
+>[!SUMMARY]
 >Dans cet article, on explore un bug surprenant en React : l’application fonctionne en test, mais en production, certaines pages ne s’affichent pas.Après enquête, un problème est identifié. Ensuite, une solution est trouvée pour corriger le souci.Ce cas montre l’importance de bien comprendre le déploiement et ses impacts.
 
 A retrouver sur le blog d'Octo : [L'affaire des pages disparues](https://blog.octo.com/l'affaire-des-pages-disparues).

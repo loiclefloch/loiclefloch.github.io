@@ -8,7 +8,7 @@ lang: en
 tags: 
 ---
 
->[!QUOTE]
+>[!SUMMARY]
 >In this article, we share you the morning talks from the first Paris TypeScript conference. Speakers from the United States, Italy, and France covered various topics related to TypeScript, emerging tools, and a wide range of topics.
 
 Find it on Octo's blog: [Paris Typescript Conference Report - Morning](https://blog.octo.com/paris-typescript-conference-report-morning).
