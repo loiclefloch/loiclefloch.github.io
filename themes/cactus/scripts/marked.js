@@ -7,6 +7,11 @@ const options = {
 
   variants: [
     {
+      type: 'summary',
+      icon: '<i class="fa-solid fa-book"></i>',
+      title: 'Summary', // optional
+    },
+    {
       type: 'quote',
       icon: '<i class="fa-solid fa-quote-right"></i>',
       title: 'Quote', // optional
