@@ -15,7 +15,8 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-#  Articles: /archives/
+  Subscribe: /subscribe
+  #  Articles: /archives/
   A propos: /about/
 #  Projets: https://github.com/loiclefloch
   Rechercher: /search/
@@ -27,12 +28,12 @@ nav:
 # You can optionally add a 'label' key to set the title attribute on the link.
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
-  - icon: bluesky
-    link: https://bsky.app/profile/loiclefloch.dev
   - icon: linkedin
     link: https://www.linkedin.com/in/loiclefloch
   - icon: github
     link: http://github.com/loiclefloch
+  - icon: bluesky
+    link: https://bsky.app/profile/loiclefloch.dev
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud

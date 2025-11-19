@@ -80,8 +80,8 @@
   });
   </script>
 <% } %>
-<!-- Baidu Analytics -->
 <% if (theme.baidu_analytics.enabled && theme.baidu_analytics.id){ %>
+    <!-- Baidu Analytics -->
   <script type="text/javascript">
         var _hmt = _hmt || [];
         (function() {
@@ -92,12 +92,12 @@
         })();
         </script>
 <% } %>
-<!-- Cloudflare Analytics -->
 <% if (theme.cloudflare_analytics.enabled && theme.cloudflare_analytics.id){ %>
+    <!-- Cloudflare Analytics -->
   <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "<%= theme.cloudflare_analytics.id %>"}'></script>
 <% } %>
-<!-- Disqus Comments -->
 <% if (page.comments && theme.disqus.enabled && theme.disqus.shortname){ %>
+    <!-- Disqus Comments -->
     <script type="text/javascript">
         var disqus_shortname = '<%= theme.disqus.shortname %>';
 
@@ -110,8 +110,8 @@
         }());
     </script>
 <% } %>
-<!-- utterances Comments -->
 <% if (page.comments && theme.utterances.enabled && theme.utterances.repo && theme.utterances.issue_term && theme.utterances.theme){ %>
+    <!-- utterances Comments -->
     <script type="text/javascript">
       var utterances_repo = '<%= theme.utterances.repo %>';
       var utterances_issue_term = '<%= theme.utterances.issue_term %>';

@@ -3,7 +3,7 @@ title: "The Case of the Vanishing Pages: Debugging an Elusive React Bug"
 date: 2025-02-05 20:13:00
 permalink: /the-case-of-vanishing-pages/
 category: Post mortem
-description: ""
+description: "A post mortem on an illusive bug when deploying an SPA app into production"
 lang: en
 ---
 

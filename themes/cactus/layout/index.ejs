@@ -1,20 +1,26 @@
 <section id="about" class="p-note">
-  <% if (config.description) { %>
+    <% /* %>
+    <% if (config.description) { %>
     <%- markdown(config.description) %>
-  <% } %>
-  <%- partial('_partial/find_me') %>
+    <% */ %>
+  <div style="margin-top: 8px;">
+      <%- partial('_partial/find_me') %>
+  </div>
+    %>
+    <div style="margin-top: 16px;">
+      <a href="#signup" style="margin-top: 8px;font-weight: 600;">Subscribe to my newsletter</a>
+  </div>
 </section>
 
 <section id="writing">
-
-<!--  <% if (theme.tags_overview && site.tags.length) { %>-->
-<!--  <span class="h2"><%= __('index.topics') %></span>-->
-<!--  <span class="widget tagcloud">-->
-<!--    <%- tagcloud(theme.tags_overview) %>-->
-<!--  </span>-->
-<!--  <span class="h2"><%= __('index.most_recent') %></span>-->
-<!--  <% } %>-->
-
+    <% /* %>
+   <% if (theme.tags_overview && site.tags.length) { %>
+  <span class="h2"><%= __('index.topics') %></span>
+  <span class="widget tagcloud">
+    <%- tagcloud(theme.tags_overview) %>
+  </span>
+  <span class="h2"><%= __('index.most_recent') %></span>
+    <% */ %>
     <section id="archive">
         <h1 class="hidden">Mes articles</h1>
         <ul class="post-list">
@@ -50,5 +56,13 @@
   </ul>
 </section>
 <% } %>
+
+<section style="margin-top: 32px;">
+    <%- partial('_partial/signup') %>
+</section>
+
+<section style="margin-top: 32px;">
+    <%- partial('_partial/buy_me_coffee') %>
+</section>
 
 <div class="page-end"></div>

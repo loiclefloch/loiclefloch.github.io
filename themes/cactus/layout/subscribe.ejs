@@ -1,0 +1,17 @@
+<main class="newsletter-list-page">
+    <%- partial('_partial/signup') %>
+
+    <section class="post-list">
+        <h2>Past Issues</h2>
+        <ul class="post-list">
+            <% site.categories.findOne({name: "newsletter"}).posts.sort('date', -1).each(function(post) { %>
+                <li class="post-item">
+                    <%- partial('_partial/post/date', {post: post, class_name: 'meta'}) %>
+                    <a href="<%- url_for(post.path) %>" target="_blank" itemprop="url">
+                        <%= post.title.replace(/^Newsletter( •)?\s+/i, '') %>
+                    </a>
+                </li>
+            <% }); %>
+        </ul>
+    </section>
+</main>

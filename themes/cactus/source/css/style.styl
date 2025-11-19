@@ -434,6 +434,108 @@ code
 
 
 //
+// -- Newsletter signup section
+//
+
+.newsletter-signup-small {
+  padding: 8px
+  background-color: rgba($color-accent-1, 0.05)
+  border-radius: 8px
+  border: 1px solid rgba($color-accent-1, 0.2)
+  width: 60ch
+  margin: 0 auto
+}
+
+.newsletter-signup
+  margin-bottom: 3rem
+  padding: 2rem
+  background-color: rgba($color-accent-1, 0.05)
+  border-radius: 8px
+  border: 1px solid rgba($color-accent-1, 0.2)
+
+  h2
+    margin-top: 0
+    margin-bottom: 1rem
+    padding-left: 0
+    color: $color-accent-1
+
+  p
+    margin-bottom: 1.5rem
+    color: $color-text
+    opacity: 0.9
+
+  .convertkit-form
+
+    .unsubscribe
+      width: 100%
+      text-align: center
+      margin-top: 16px
+
+    // Override any ConvertKit default styles to match theme
+    input[type="email"]
+      width: 100%
+      max-width: 400px
+      padding: 0.75rem 1rem
+      border: 1px solid $color-border
+      border-radius: 4px
+      background-color: $color-background
+      color: $color-text
+      font-family: $font-family-body
+      font-size: 1rem
+
+      &:focus
+        outline: none
+        border-color: $color-accent-1
+
+    button, input[type="submit"]
+      width: 100%
+      padding: 0.75rem 2rem
+      margin: 0 auto
+      margin-top: 1rem
+      background-color: $color-accent-1
+      color: white
+      border: none
+      border-radius: 4px
+      cursor: pointer
+      font-family: $font-family-body
+      font-size: 1rem
+      font-weight: 600
+      transition: background-color 0.2s ease
+      max-width: 400px
+
+      &:hover
+        background-color: darken($color-accent-1, 10%)
+
+//
+// -- ConvertKit Button (Buy me a coffee)
+//
+
+.convertkit-button
+  display: inline-block
+  padding: 0.75rem 2rem
+  background-color: $color-accent-1!important
+  border-color: $color-accent-1!important
+  color: white !important
+  border-radius: 4px
+  cursor: pointer
+  font-family: $font-family-body
+  font-size: 1rem
+  font-weight: 600
+  text-decoration: none
+  transition: all 0.2s ease
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+  &:hover
+    background-color: darken($color-accent-1, 10%)
+    transform: translateY(-2px)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15)
+    text-decoration: none !important
+
+  &:active
+    transform: translateY(0)
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+//
 // -- Utils
 //
 

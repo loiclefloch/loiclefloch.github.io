@@ -3,7 +3,7 @@ title: Make Gmail Readable
 date: 2025-02-25 23:03:00
 category: TIL
 permalink: /make-gmail-readable/
-description: "TODO"
+description: "Make Gmail readable"
 lang: en
 tags: 
 ---
