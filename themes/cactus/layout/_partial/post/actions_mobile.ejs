@@ -9,10 +9,10 @@
       </ul>
     </div>
 
-    <% let tocHTML = toc(page.content, { max_depth: 3 }) %>
+    <% let tocHTML = toc(page.content, { max_depth: page.toc_depth ? page.toc_depth + 1 : 3 }) %>
     <% if (tocHTML !== '') { %>
       <div id="toc-footer" style="display: none">
-        <%- toc(page.content, { max_depth: 3 }) %>
+        <%- toc(page.content, { max_depth: page.toc_depth ? page.toc_depth + 1 : 3 }) %>
       </div>
     <% } %>
 

@@ -31,7 +31,7 @@
     <div id="share" style="display: none">
       <%- partial('_partial/post/share', { icon_class_name: '' }) %>
     </div>
-    <% let tocHTML = toc(page.content, { max_depth: 3 }) %>
+    <% let tocHTML = toc(page.content, { max_depth: page.toc_depth ? page.toc_depth + 1 : 3 }) %>
     <% if (tocHTML !== '') { %>
       <div id="toc">
         <%- tocHTML %>

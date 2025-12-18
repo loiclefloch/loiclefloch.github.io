@@ -95,7 +95,7 @@ tags:
 
 ### Best practices and usage
 - [GitHub Copilot Best Practices & Spec-Driven Development](https://github.com/networkdowntime/github-copilot-best-practices#github-copilot-best-practices--spec-driven-development)
-- [Introducing Agent Skills](https://www.anthropic.com/news/skills) - "", take a look at [Skill seekers](https://github.com/yusufkaraaslan/Skill_Seekers/) to "convert documentation websites, GitHub repositories, and PDFs into Claude AI skills"
+- [Introducing Agent Skills](https://www.anthropic.com/news/skills) - take a look at [Skill seekers](https://github.com/yusufkaraaslan/Skill_Seekers/) to "convert documentation websites, GitHub repositories, and PDFs into Claude AI skills"
 - [Claude Code is a Beast – Tips from 6 Months of Hardcore Use](https://www.reddit.com/r/ClaudeAI/comments/1oivjvm/claude_code_is_a_beast_tips_from_6_months_of/)
 - [Living dangerously with Claude](https://simonwillison.net/2025/Oct/22/living-dangerously-with-claude/) - A post productivity benefits and significant security risks of using Claude Code in "YOLO mode" which allows the coding agent to operate autonomously without frequent human approval. It exposes users to serious vulnerabilities like prompt injection attacks making it mandatory to run agents in sandboxed, controlled environments
 - [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
