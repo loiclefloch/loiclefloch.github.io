@@ -10,6 +10,7 @@ tags:
 
 ## Trends
 
+- [Building an Exam Prep App in 12 Hours with AI and Spec-First Development](https://www.loiclefloch.fr/spec-kit-cappei-quest/) → How I used GitHub's Spec Kit for AI-powered Spec-Driven Development to create a learning app.
 - [How Google Maps quietly allocates survival across London’s restaurants](https://laurenleek.substack.com/p/how-google-maps-quietly-allocates) → how ranking and visibility translate into real-world survival odds for businesses.
 - [oh my opencode](https://github.com/code-yeongyu/oh-my-opencode) → OpenCode Plugin with sub-agents
 - [10 ans de Clean Architecture chez OpenClassrooms : le rêve, la réalité, les leçons](https://www.youtube.com/watch?v=LbzQDnWHqbU) (FR) → debriefs a decade of Clean Architecture in a real product, with concrete lessons and trade-offs.
