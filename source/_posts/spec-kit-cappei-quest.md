@@ -6,6 +6,7 @@ category: Post mortem
 description: "Feedback on building an application with AI using Spec-driven development with SpecKit"
 lang: en
 toc_depth: 1
+tags: [development, spec-driven-development, methodology]
 ---
 
 > My friend needs to prepare for the CAPPEI – a French certification exam for specialized teaching. She had stacks of PDF guides and scattered notes. I saw an opportunity: build her a custom learning app. 
@@ -720,3 +721,6 @@ This project demonstrates the power of the combination:
 
 **The secret**: Don't code before specifying. 3 hours of thinking is better than 10 hours of refactoring.
 
+---
+
+Interested on Spec driven development? Look at my other post on [How I used BMAD methodology to build a personal e-ink reading tool](/building-inkwell-with-bmad).
