@@ -1,0 +1,185 @@
+<main class="qrcode-page">
+    <div class="qrcode-container" id="qrcode-container">
+        <p class="qrcode-subtitle">Scan to visit my blog</p>
+
+        <div class="qrcode-wrapper">
+            <qr-code
+                id="qr"
+                contents="https://loiclefloch.fr"
+                module-color="#c9cacc"
+                position-ring-color="#93BEAE"
+                position-center-color="#F4BF77"
+                style="width: 400px; height: 400px; background-color: transparent;"
+            ></qr-code>
+        </div>
+
+        <p class="qrcode-url">loiclefloch.fr</p>
+
+        <button class="qrcode-toggle" id="toggle-bg" aria-label="Toggle background color">
+            <span class="toggle-icon">☀️</span>
+            <span class="toggle-text">Light mode</span>
+        </button>
+    </div>
+</main>
+
+<style>
+.qrcode-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 2rem;
+}
+
+.qrcode-container {
+    text-align: center;
+    padding: 3rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.qrcode-container.light-mode {
+    background-color: #ffffff;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.qrcode-title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #c9cacc;
+    font-weight: 600;
+}
+
+.light-mode .qrcode-title {
+    color: #1d1f21;
+}
+
+.qrcode-subtitle {
+    font-size: 1.1rem;
+    color: #908d8d;
+    margin-bottom: 2rem;
+}
+
+.light-mode .qrcode-subtitle {
+    color: #666;
+}
+
+.qrcode-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.qrcode-url {
+    font-size: 1.5rem;
+    color: #93BEAE;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 1.5rem;
+}
+
+.light-mode .qrcode-url {
+    color: #2a6f5a;
+}
+
+.qrcode-toggle {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #908d8d;
+    border-radius: 8px;
+    background: transparent;
+    color: #c9cacc;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.qrcode-toggle:hover {
+    border-color: #93BEAE;
+    color: #93BEAE;
+}
+
+.light-mode .qrcode-toggle {
+    border-color: #ccc;
+    color: #333;
+}
+
+.light-mode .qrcode-toggle:hover {
+    border-color: #2a6f5a;
+    color: #2a6f5a;
+}
+
+/* Large size for projection - responsive scaling */
+@media (min-width: 768px) {
+    .qrcode-wrapper qr-code {
+        width: 500px !important;
+        height: 500px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .qrcode-wrapper qr-code {
+        width: 600px !important;
+        height: 600px !important;
+    }
+}
+
+/* Fullscreen mode for projection */
+.qrcode-page:fullscreen,
+.qrcode-page:-webkit-full-screen {
+    background: #040D12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode-page:fullscreen .qrcode-wrapper qr-code,
+.qrcode-page:-webkit-full-screen .qrcode-wrapper qr-code {
+    width: 70vh !important;
+    height: 70vh !important;
+}
+
+.qrcode-page:fullscreen.light-mode,
+.qrcode-page:-webkit-full-screen.light-mode {
+    background: #ffffff;
+}
+</style>
+
+<script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
+<script>
+(function() {
+    var qr = document.getElementById('qr');
+    var container = document.getElementById('qrcode-container');
+    var toggleBtn = document.getElementById('toggle-bg');
+    var isLightMode = false;
+
+    // Animate QR code on load
+    qr.addEventListener('codeRendered', function() {
+        qr.animateQRCode('FadeInCenterOut');
+    });
+
+    // Toggle background
+    toggleBtn.addEventListener('click', function() {
+        isLightMode = !isLightMode;
+        container.classList.toggle('light-mode', isLightMode);
+
+        // Update QR code colors for better contrast
+        if (isLightMode) {
+            qr.setAttribute('module-color', '#1d1f21');
+            qr.setAttribute('position-ring-color', '#2a6f5a');
+            qr.setAttribute('position-center-color', '#c4873a');
+            toggleBtn.querySelector('.toggle-icon').textContent = '🌙';
+            toggleBtn.querySelector('.toggle-text').textContent = 'Dark mode';
+        } else {
+            qr.setAttribute('module-color', '#c9cacc');
+            qr.setAttribute('position-ring-color', '#93BEAE');
+            qr.setAttribute('position-center-color', '#F4BF77');
+            toggleBtn.querySelector('.toggle-icon').textContent = '☀️';
+            toggleBtn.querySelector('.toggle-text').textContent = 'Light mode';
+        }
+    });
+})();
+</script>
