@@ -1,13 +1,4 @@
-// https://github.com/thom4parisot/hexo-image-caption/blob/patch-1/index.js
-hexo.extend.filter.register('after_post_render', function (data) {
-  if (hexo.config.image_caption.enable === true) {
-    const {class_name = 'image-caption'} = hexo.config.image_caption;
-    if (data.layout === 'post' || data.layout === 'page' || data.layout === 'about') {
-      data.content = data.content.replace(
-        /(<img [^>]*alt="([^"]+)"[^>]*>)/g,
-        `<figure class="${class_name}">$1<figcaption>$2</figcaption></figure>`
-      );
-    }
-  }
-  return data;
-});
+// Disabled: Image caption handling moved to image-renderer.js
+// This file previously wrapped images in <figure> tags after render,
+// but that approach couldn't properly separate alt text from caption.
+// See image-renderer.js for the new implementation.
