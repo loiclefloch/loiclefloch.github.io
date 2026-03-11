@@ -1,0 +1,370 @@
+// Theme Toggle Support - CSS Variables Layer
+// Stylus generates CSS variables from color definitions
+// Runtime theme switching via [data-theme] attribute
+
+// :root variables - default light theme from custom-light.styl
+\:root
+  --color-bg #fdf9f3
+  --color-fg #1a1a1a
+  --color-secondary #ff7e70
+  --color-link-color #ff7e70
+  --color-accent-1-var #93beae
+  --color-accent-1-hover #7a9f8e
+  --color-accent-2-var #1a1a1a
+  --color-accent-3-var #6b7280
+  --color-border-var #6b7280
+  --color-code-bg #f8faf9
+  --color-meta-var #6b7280
+  --color-meta-hover #8a929e
+  --color-meta-dark #525862
+  --color-meta-code-var #9ca3af
+  --color-meta-code-hover #b8bec9
+  --color-scrollbar-var #9ca3af
+  --color-scrollbar-hover #808795
+  --color-scrollbar-active #6f7684
+  --color-quote #ff7e70
+  --color-footer-mobile-1 #f8faf9
+  --color-footer-mobile-2 #f0f5f2
+  // Inline code colors for light theme
+  --color-inline-code-bg #e8ede9
+  --color-inline-code-fg #2d5e4a
+  --color-inline-code-border #c5d4cd
+  // RGBA variants for light theme
+  --color-accent-1-005 rgba(147, 190, 174, 0.05)
+  --color-accent-1-01 rgba(147, 190, 174, 0.1)
+  --color-accent-1-02 rgba(147, 190, 174, 0.2)
+  --color-border-03 rgba(107, 114, 128, 0.3)
+  --color-border-05 rgba(107, 114, 128, 0.5)
+  --color-bg-05 rgba(253, 249, 243, 0.5)
+
+// Dark theme overrides - values from dark.styl
+[data-theme="dark"]
+  --color-bg #040D12
+  --color-fg #c9cacc
+  --color-secondary #ff7e70
+  --color-link-color #ff7e70
+  --color-accent-1-var #93BEAE
+  --color-accent-1-hover darken(#93BEAE, 10%)
+  --color-accent-2-var #eeeeee
+  --color-accent-3-var #cccccc
+  --color-border-var #908d8d
+  --color-code-bg lighten(#040D12, 2%)
+  --color-meta-var #908d8d
+  --color-meta-hover lighten(#908d8d, 20%)
+  --color-meta-dark darken(#908d8d, 20%)
+  --color-meta-code-var #908d8d
+  --color-meta-code-hover lighten(#908d8d, 20%)
+  --color-scrollbar-var #999
+  --color-scrollbar-hover darken(#999, 20%)
+  --color-scrollbar-active darken(#999, 30%)
+  --color-quote #ccffb6
+  --color-footer-mobile-1 lighten(#040D12, 2%)
+  --color-footer-mobile-2 lighten(#040D12, 10%)
+  // Inline code (not in highlight blocks)
+  --color-inline-code-bg #1e1e1e
+  --color-inline-code-fg #76c7f0
+  --color-inline-code-border #333
+  // RGBA variants
+  --color-accent-1-005 rgba(#93BEAE, 0.05)
+  --color-accent-1-01 rgba(#93BEAE, 0.1)
+  --color-accent-1-02 rgba(#93BEAE, 0.2)
+  --color-border-03 rgba(#908d8d, 0.3)
+  --color-border-05 rgba(#908d8d, 0.5)
+  --color-bg-05 rgba(#040D12, 0.5)
+
+// Light theme explicit selector (same as :root for compatibility)
+[data-theme="custom-light"]
+  --color-bg #fdf9f3
+  --color-fg #1a1a1a
+  --color-secondary #ff7e70
+  --color-link-color #ff7e70
+  --color-accent-1-var #93beae
+  --color-accent-1-hover #7a9f8e
+  --color-accent-2-var #1a1a1a
+  --color-accent-3-var #6b7280
+  --color-border-var #6b7280
+  --color-code-bg #f8faf9
+  --color-meta-var #6b7280
+  --color-meta-hover #8a929e
+  --color-meta-dark #525862
+  --color-meta-code-var #9ca3af
+  --color-meta-code-hover #b8bec9
+  --color-scrollbar-var #9ca3af
+  --color-scrollbar-hover #808795
+  --color-scrollbar-active #6f7684
+  --color-quote #ff7e70
+  --color-footer-mobile-1 #f8faf9
+  --color-footer-mobile-2 #f0f5f2
+  // Inline code colors for light theme
+  --color-inline-code-bg #e8ede9
+  --color-inline-code-fg #2d5e4a
+  --color-inline-code-border #c5d4cd
+  // RGBA variants for light theme
+  --color-accent-1-005 rgba(147, 190, 174, 0.05)
+  --color-accent-1-01 rgba(147, 190, 174, 0.1)
+  --color-accent-1-02 rgba(147, 190, 174, 0.2)
+  --color-border-03 rgba(107, 114, 128, 0.3)
+  --color-border-05 rgba(107, 114, 128, 0.5)
+  --color-bg-05 rgba(253, 249, 243, 0.5)
+
+// Override compiled styles with CSS Variables
+// These selectors must match what Stylus generates
+
+body
+  background-color var(--color-bg)
+  color var(--color-fg)
+
+html
+  border-top-color var(--color-accent-1-var)
+
+// Scrollbar with CSS vars
+*::-webkit-scrollbar-thumb
+  background-color var(--color-scrollbar-var)
+
+// Links
+.content a
+  color var(--color-fg)
+  
+  &:hover
+    color var(--color-link-color)
+
+// Headings
+h1, .h1
+  color var(--color-accent-1-var)
+
+h2, .h2, h3
+  color var(--color-accent-2-var)
+
+h4, h5, h6
+  color var(--color-accent-3-var)
+
+.page-title
+  color var(--color-accent-1-var)
+
+// Code blocks
+pre
+  border-color var(--color-border-var)
+  background-color var(--color-code-bg)
+
+code
+  background-color var(--color-code-bg)
+  border-color var(--color-border-var)
+  color var(--color-link-color)
+
+.highlight
+  background var(--color-code-bg)
+
+// Header
+#header
+  #title
+    color var(--color-fg)
+  
+  #nav ul li a
+    color var(--color-fg)
+
+    &:hover
+      color var(--color-link-color)
+
+// Footer
+#footer
+  color var(--color-meta-var)
+  border-top-color var(--color-border-var)
+  
+  a
+    color var(--color-meta-var)
+    
+    &:hover
+      color var(--color-link-color)
+
+// Post elements
+.post-title, .post-title a
+  color var(--color-accent-1-var)
+
+.post-meta
+  color var(--color-meta-var)
+
+.post-content
+  color var(--color-fg)
+
+// Tables
+th
+  border-bottom-color var(--color-border-var)
+  color var(--color-accent-2-var)
+
+// Archives
+.archive-article-title
+  color var(--color-fg)
+  
+.archive-article-title:hover
+  color var(--color-link-color)
+
+// Tags
+.tag-list-item a, .article-tag-list-item a
+  color var(--color-accent-1-var)
+  border-color var(--color-accent-1-var)
+  
+  &:hover
+    background-color var(--color-accent-1-var)
+    color var(--color-bg)
+
+// Pagination
+.page-number, .extend.prev, .extend.next
+  color var(--color-accent-1-var)
+  border-color var(--color-accent-1-var)
+  
+  &:hover
+    background-color var(--color-accent-1-var)
+    color var(--color-bg)
+
+// Menu icons
+#menu-icon, #menu-icon-tablet
+  color var(--color-accent-1-var)
+
+// Newsletter
+.newsletter-signup, .newsletter-signup-small
+  h2
+    color var(--color-accent-1-var)
+  
+  p
+    color var(--color-fg)
+  
+  input[type="email"]
+    border-color var(--color-border-var)
+    background-color var(--color-bg)
+    color var(--color-fg)
+    
+    &:focus
+      border-color var(--color-accent-1-var)
+  
+  button, input[type="submit"]
+    background-color var(--color-accent-1-var)
+
+// Search
+#search-input
+  background-color var(--color-bg)
+  color var(--color-fg)
+  border-color var(--color-border-var)
+
+// HR
+hr
+  border-color var(--color-accent-3-var)
+
+// Mobile footer backgrounds
+#footer-post
+  background var(--color-footer-mobile-1)
+  border-top-color var(--color-border-var)
+
+#nav-footer, #share-footer, #toc-footer
+  background var(--color-footer-mobile-2)
+
+// Theme toggle button styling (in header nav)
+.theme-toggle a
+  color var(--color-fg)
+  transition color 0.3s ease
+  
+  &:hover
+    color var(--color-link-color)
+
+// Fixed theme toggle button (always visible)
+#theme-toggle-wrapper
+  position fixed
+  top 20px
+  left 20px
+  z-index 1000
+  
+  a
+    display flex
+    align-items center
+    justify-content center
+    width 28px
+    height 28px
+    background-color var(--color-accent-1-var)
+    color var(--color-bg)
+    border-radius 50%
+    text-decoration none
+    transition all 0.3s ease
+    box-shadow 0 2px 8px var(--color-border-03)
+    
+    &:hover
+      background-color var(--color-accent-1-hover)
+      box-shadow 0 4px 12px var(--color-border-05)
+      transform scale(1.05)
+    
+    i
+      font-size 1.2rem
+      
+  // Responsive adjustments
+  @media screen and (max-width: 768px)
+    top 15px
+    right 15px
+    
+    a
+      width 40px
+      height 40px
+      
+      i
+        font-size 1rem
+
+// Additional fixes for light mode
+
+// Body h2, h3 - hardcoded #eee
+body h2, body .h2, body h3
+  color var(--color-accent-2-var)
+
+// Header meta (author, date, etc.)
+header .meta, header .meta *
+  color var(--color-meta-var)
+
+// Newsletter signup paragraph opacity fix
+.newsletter-signup p
+  opacity 1
+
+// External forms (ConvertKit, etc.)
+// These are injected and not in our control, but we can style the container
+.newsletter-signup, .newsletter-signup-small
+  // Formkit inputs (ConvertKit)
+  input, textarea, select
+    background-color var(--color-bg)
+    color var(--color-fg)
+    border-color var(--color-border-var)
+    
+    &:focus
+      border-color var(--color-accent-1-var)
+      background-color var(--color-bg)
+  
+  // Formkit labels
+  label
+    color var(--color-fg)
+  
+  // Any nested paragraphs or text
+  *
+    color var(--color-fg)
+
+// Table of Contents (TOC)
+#header-post #toc
+  .toc-level-2
+    color var(--color-fg)
+    
+    &:before
+      color var(--color-accent-1-var)
+  
+  .toc-level-3
+    color var(--color-meta-var)
+  
+  .toc-level-4
+    color var(--color-meta-var)
+
+// Blockquotes
+.post blockquote
+  color var(--color-fg)
+  border-left-color var(--color-quote)
+  
+  footer
+    color var(--color-meta-var)
+    
+    a
+      color var(--color-meta-var)
+      background-image none
+
+.post .highlight
+  border-left-color var(--color-accent-1-var)

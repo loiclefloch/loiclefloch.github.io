@@ -18,7 +18,7 @@ header
     margin-bottom: 1rem
 
   .meta *
-    color: $color-accent-3
+    color: var(--color-accent-3-var)
     font-size: .85rem
 
   .author
@@ -44,6 +44,11 @@ header
       margin-left: auto;
       margin-right: auto;
 
+  .post
+    blockquote
+      margin-top: 16px;
+      margin-bottom: 16px;
+
     //h4
     //  display block
 
@@ -55,13 +60,13 @@ header
 
   .e-content
     a
-      color: $color-text
+      color: var(--color-fg)
       text-decoration: none
 
-      underline(5px, $color-text)
+      underline(5px, var(--color-fg))
 
       &:hover
-        background-image: linear-gradient(transparent, transparent 4px, $color-link 4px, $color-link)
+        background-image: linear-gradient(transparent, transparent 4px, var(--color-link-color) 4px, var(--color-link-color))
 
     .highlight
       margin-left: auto!important;
@@ -102,7 +107,7 @@ header
       position: absolute
       top: 1px
       left: 0
-      color: $color-accent-1
+      color: var(--color-accent-1-var)
       content: "#"
       font-weight: bold
       font-size: 1.2rem
@@ -115,7 +120,7 @@ header
       position: absolute
       top: 1px
       left: 0
-      color: $color-accent-1
+      color: var(--color-accent-1-var)
       content: "#"
       font-weight: bold
       font-size: 1.2rem
@@ -129,7 +134,7 @@ header
     position: absolute
     top: -4px
     left: 0
-    color: $color-accent-1
+    color: var(--color-accent-1-var)
     content: "##"
     font-weight: bold
     font-size: 1.2rem
@@ -161,15 +166,15 @@ header
     padding: 8px 20px
 
   .highlight
-    border-left: 3px solid $color-accent-1
+    border-left: 3px solid var(--color-accent-1-var)
 
   //.highlight commented to have better code display
   blockquote
     //margin: 16px
     padding: 8px 20px
     background: inherit
-    color: $color-text
-    border-left: 3px solid $color-quote
+    color: var(--color-fg)
+    border-left: 3px solid var(--color-quote)
     quotes: "\201C" "\201D" "\2018" "\2019"
     font-weight: 400
 
@@ -184,7 +189,7 @@ header
 
     //&:before
     //  margin-right: .25em
-    //  color: $color-quote
+    //  color: var(--color-quote)
     //  content: "\201C"
     //  vertical-align: -.4em
     //  font-size: 2em
@@ -192,16 +197,16 @@ header
 
     footer
       margin: line-height 0
-      color: $color-meta
+      color: var(--color-meta-var)
       font-size: 12px
 
       a
-        background-image: linear-gradient(transparent, transparent 5px, $color-meta 5px, $color-meta)
-        color: $color-meta
+        background-image: linear-gradient(transparent, transparent 5px, var(--color-meta-var) 5px, var(--color-meta-var))
+        color: var(--color-meta-var)
 
       a:hover
-        background-image: linear-gradient(transparent, transparent 4px, lighten($color-meta, 20%) 4px, lighten($color-meta, 20%))
-        color: lighten($color-meta, 20%)
+        background-image: linear-gradient(transparent, transparent 4px, var(--color-meta-hover) 4px, var(--color-meta-hover))
+        color: var(--color-meta-hover)
 
       cite
         &:before
@@ -225,7 +230,7 @@ header
     position: relative
     display: block
     margin-top: .5em
-    color: $color-meta
+    color: var(--color-meta-var)
     text-align: center
     font-size: .9em
 
@@ -237,11 +242,11 @@ header
 
 .article-tag
   .tag-link
-    underline(10px, $color-link)
+    underline(10px, var(--color-link-color))
 
 .article-category
   .category-link
-    underline(10px, $color-link)
+    underline(10px, var(--color-link-color))
 
 @media (min-width: 480px)
   .article-tag,

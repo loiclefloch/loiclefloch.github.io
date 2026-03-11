@@ -12,7 +12,7 @@
   h1, .h1, #title .p-name
     margin-top: 0
     margin-bottom: 0
-    color: $color-text
+    color: var(--color-accent-1-var)
     letter-spacing: .01em
     font-weight: 700
     font-style: normal
@@ -40,7 +40,6 @@
       -webkit-filter: grayscale(100%)
 
   #nav
-    color: $color-accent-1
     letter-spacing: .01em
     font-weight: 200
     font-style: normal
@@ -54,16 +53,11 @@
 
       a
         margin-right: 15px
-        color: $color-accent-1
-
-      a:hover
-        underline(5px, $color-accent-1)
 
       li
         display: inline-block
         margin-right: 15px
         border-right: 1px dotted
-        border-color: $color-accent-1
         vertical-align: middle
 
       .icon
@@ -117,8 +111,8 @@ if $logo-grayout
       li
         display: block
         text-align center
-    
-    ul 
+
+    ul
       a[aria-label="Menu"]
         display: inline-block
         min-width: 48px

@@ -2,16 +2,16 @@
   padding: 4px 7px
   width: 100%
   outline: none
-  border: solid 1px $color-accent-3
+  border: solid 1px var(--color-accent-3-var)
   border-radius: 5px
-  background-color: $color-background
-  color: $color-text
+  background-color: var(--color-bg)
+  color: var(--color-fg)
   font-size: 1.2rem
   -webkit-border-radius: 5px
   -moz-border-radius: 5px
 
   &:focus
-    border: solid 1px $color-accent-1
+    border: solid 1px var(--color-accent-1-var)
 
 #search-result
   ul.search-result-list
@@ -23,7 +23,7 @@
 
   a.search-result-title
     background-image: none
-    color: $color-text
+    color: var(--color-fg)
     text-transform: capitalize
     font-weight: bold
     line-height: 1.2
@@ -36,12 +36,12 @@
     font-size: .8em
 
   em.search-keyword
-    border-bottom: 1px dashed $color-link
-    color: $color-link
+    border-bottom: 1px dashed var(--color-link-color)
+    color: var(--color-link-color)
     font-weight: bold
 
 .search-no-result
   display: none
   margin-top: 16px
   padding-bottom: .5em
-  color: $color-text
+  color: var(--color-fg)
