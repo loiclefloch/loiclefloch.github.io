@@ -1,5 +1,5 @@
 ---
-title: Newsletter • Septembre 2024
+title: "Newsletter #3 • Septembre 2024"
 date: 2024-10-01 08:50:00
 permalink: /newsletter/september-2024/
 category: newsletter
@@ -183,4 +183,3 @@ https://devblogs.microsoft.com/typescript/announcing-typescript-5-6
 ### How Discord Reduced Websocket Traffic by 40%
 
 https://discord.com/blog/how-discord-reduced-websocket-traffic-by-40-percent
-

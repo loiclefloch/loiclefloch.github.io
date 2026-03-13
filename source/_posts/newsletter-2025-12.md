@@ -1,5 +1,5 @@
 ---
-title: Newsletter • December 2025
+title: "Newsletter #17 • December 2025"
 date: 2025-12-01 11:35:00
 category: newsletter
 permalink: /newsletter/december-2025/
@@ -170,4 +170,3 @@ _Don't miss these_
 
 - [IKEA catalogue](https://ikeamuseum.com/en/explore/ikea-catalogue/) → Revisit IKEA catalogues from 1950 onward, a window into design of yesteryear
 - [The art of atari](http://www.artofatari.com/) → Cultural dive into vintage gaming aesthetics
-

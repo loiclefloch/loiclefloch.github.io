@@ -1,5 +1,5 @@
 ---
-title: Newsletter • Juillet 2024
+title: "Newsletter #1 • Juillet 2024"
 date: 2024-08-01 10:45:00
 category: newsletter
 permalink: /newsletter/july-2024/

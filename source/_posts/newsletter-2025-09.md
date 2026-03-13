@@ -1,5 +1,5 @@
 ---
-title: Newsletter • September 2025
+title: "Newsletter #14 • September 2025"
 date: 2025-09-02 17:28:00
 category: newsletter
 permalink: /newsletter/september-2025/

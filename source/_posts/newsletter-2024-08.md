@@ -1,5 +1,5 @@
 ---
-title: Newsletter • Août 2024
+title: "Newsletter #2 • Août 2024"
 date: 2024-09-01 08:45:00
 permalink: /newsletter/august-2024/
 category: newsletter
@@ -114,4 +114,3 @@ Source: https://x.com/BinaryIgor/status/1824483624244351437
 En Java nous avons les modules maven qui peuvent être indépendant et configurés pour n'accéder qu'à certains autres modules. En node, ca n'existe pas. Je cherchais une solution de ce type en node depuis un moment me permettant de valider que l'on respecte les différentes conventions et dépendances entre les différents modules.
 
 Source: L'article "Micro-frontend : un exemple d'implémentation" décris plus haut
-

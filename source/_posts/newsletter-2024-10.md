@@ -1,5 +1,5 @@
 ---
-title: Newsletter • Octobre 2024
+title: "Newsletter #4 • Octobre 2024"
 date: 2024-11-01 10:45:00
 category: newsletter
 permalink: /newsletter/october-2024/

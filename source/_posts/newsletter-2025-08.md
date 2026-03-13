@@ -1,5 +1,5 @@
 ---
-title: Newsletter • August 2025
+title: "Newsletter #13 • August 2025"
 date: 2025-08-03 14:00:00
 category: newsletter
 permalink: /newsletter/august-2025/
@@ -91,4 +91,3 @@ And two articles on Programmez! magazine:
 ## Fun
 
 - [Accessibility audit in 15 minutes](https://ia11y.frontguys.fr/)
-
