@@ -47,8 +47,17 @@ if (!!$.prototype.justifiedGallery) {
     initTheme();
   }
 
-  // Attach toggle function to global scope for button onclick
-  window.toggleTheme = toggleTheme;
+  // Attach click handler to toggle button
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("theme-toggle-btn");
+    if (toggleBtn) {
+      toggleBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        toggleTheme();
+        return false;
+      });
+    }
+  });
 })();
 
 $(document).ready(function () {
@@ -126,11 +135,13 @@ $(document).ready(function () {
         var topDistance = $(window).scrollTop();
 
         if (topDistance > lastScrollTop) {
-          // downscroll -> show menu
+          // downscroll -> hide menu and theme toggle
           $("#footer-post").hide();
+          $("#theme-toggle-wrapper").hide();
         } else {
-          // upscroll -> hide menu
+          // upscroll -> show menu and theme toggle
           $("#footer-post").show();
+          $("#theme-toggle-wrapper").show();
         }
         lastScrollTop = topDistance;
 

@@ -122,11 +122,11 @@ html
   background-color var(--color-scrollbar-var)
 
 // Links
-.content a
-  color var(--color-fg)
-  
-  &:hover
-    color var(--color-link-color)
+//.content a
+//  color var(--color-fg)
+//
+//  &:hover
+//    color var(--color-link-color)
 
 // Headings
 h1, .h1
@@ -271,6 +271,7 @@ hr
   top 20px
   left 20px
   z-index 1000
+  transition opacity 0.3s ease, visibility 0.3s ease
   
   a
     display flex
@@ -296,7 +297,7 @@ hr
   // Responsive adjustments
   @media screen and (max-width: 768px)
     top 15px
-    right 15px
+    left 15px
     
     a
       width 40px
