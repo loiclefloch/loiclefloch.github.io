@@ -28,6 +28,17 @@ header
   .postdate
     display: inline
 
+
+.e-content
+  a
+    color: var(--color-fg)
+    text-decoration: none
+
+    underline(5px, var(--color-fg))
+    
+    &:hover
+      background-image: linear-gradient(transparent, transparent 4px, var(--color-link-color) 4px, var(--color-link-color))
+
 @media (min-width: 760px)
   .post
     h2,
@@ -59,14 +70,6 @@ header
     user-select none
 
   .e-content
-    a
-      color: var(--color-fg)
-      text-decoration: none
-
-      underline(5px, var(--color-fg))
-
-      &:hover
-        background-image: linear-gradient(transparent, transparent 4px, var(--color-link-color) 4px, var(--color-link-color))
 
     .highlight
       margin-left: auto!important;
