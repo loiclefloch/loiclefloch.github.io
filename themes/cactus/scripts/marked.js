@@ -22,6 +22,11 @@ const options = {
       title: 'New clue unlocked', // optional
     },
     {
+      type: 'download',
+      icon: '<i class="fa-solid fa-angles-down"></i>',
+      title: '<b>Download</b>',
+    },
+    {
       type: 'insight',
       icon: '<i class="fa-solid fa-puzzle-piece"></i>',
       title: 'Insight', // optional

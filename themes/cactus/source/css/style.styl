@@ -412,6 +412,14 @@ code
   color: var(--color-tip);
 }
 
+.markdown-alert.markdown-alert-download {
+  border-left-color: var(--color-secondary);
+}
+
+.markdown-alert.markdown-alert-markdown-alert-download .markdown-alert-title {
+  color: var(--color-secondary);
+}
+
 .markdown-alert.markdown-alert-insight {
   border-left-color: var(--color-tip);
 }
@@ -709,3 +717,43 @@ b {
         display: block
         margin-bottom: 0.25rem
         color: var(--color-accent-1-var)
+
+
+.card-culture-code
+  margin-bottom: 32px
+  padding: 16px
+  border-radius: 8px
+  border: 1px solid var(--color-secondary)
+  //background-color: var(--col/**/or-accent-1-005)
+  transition: all 0.3s ease
+
+  &:hover
+    border-color: var(--color-secondary)
+    box-shadow: 0 4px 12px var(--color-border-03)
+    transform: translateY(-2px)
+
+  h2
+    padding: 0
+    margin-bottom: 16px
+    color: var(--color-secondary)
+    text-align center
+
+  a
+    display: block
+    text-decoration: none
+    color: inherit
+    text-align center
+
+    &:hover
+      background: none
+    > div:first-child
+      display: flex
+      justify-content: center
+      margin-bottom: 16px
+
+  img
+    width: 100%
+    max-width: 350px
+    height: auto
+    border-radius: 4px
+    box-shadow: 0 2px 8px var(--color-border-03)
