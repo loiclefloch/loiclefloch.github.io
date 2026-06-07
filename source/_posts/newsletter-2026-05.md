@@ -3,7 +3,7 @@ title: "Newsletter #22 • May 2026"
 date: 2026-05-05 16:09:00
 category: newsletter
 permalink: /newsletter/may-2026/
-description: "May 2026: "
+description: "May 2026: Culture API, AI legacy modernization, Harness Engineering for coding agents, Claude Mythos and Opus 4.7, defensive databases, API design, TypeScript migration, passkey security, software craftsmanship, and AI-era engineering careers."
 lang: en
 tags:
 ---
