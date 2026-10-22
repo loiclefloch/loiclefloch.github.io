@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main # default branch
+  workflow_dispatch: # run a build/deploy manually from the Actions tab
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
         with:
@@ -18,20 +23,11 @@ jobs:
         uses: pnpm/action-setup@v4
         with:
             version: 9.1.1
-      - name: Use Node.js 20
+      - name: Use Node.js from .nvmrc
         uses: actions/setup-node@v4
         with:
-          # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
-          # Ref: https://github.com/actions/setup-node#supported-version-syntax
-          node-version: "20"
+          node-version-file: ".nvmrc"
           cache: 'pnpm'
-      - name: Cache PNPM dependencies
-        uses: actions/cache@v4
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-pnpm-cache
-          restore-keys: |
-            ${{ runner.OS }}-pnpm-cache
       - name: Install Dependencies
         run: pnpm install
       - name: Build
@@ -48,7 +44,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
