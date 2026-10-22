@@ -207,7 +207,17 @@ body
 @import "_partial/tooltip"
 @import "_partial/categories"
 // Code
-@import "_highlight/" + $highlight
+// Each palette only applies to its theme. :where() keeps the specificity of
+// the original rules so the background from _theme-toggle still wins.
+:where([data-theme="dark"])
+  @import "_highlight/" + $highlight
+:where(html:not([data-theme="dark"]))
+  @import "_highlight/" + $highlight_light
+  .highlight .code
+    .comment, .quote, .meta
+      color: #5f6b75
+    .built_in, .builtin-name
+      color: #00698f
 @import "_theme-toggle"
 
 pre
